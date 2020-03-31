@@ -14,6 +14,7 @@ class Footer extends React.Component {
     componentDidMount () {
 
         window.ppSettings = {
+		background_color:'#3462DF',
             app_uuid:'a600998e-efff-11e5-9d9f-02287b8c0ebf',
             server_url: 'https://ppmessage.cn'
         };
