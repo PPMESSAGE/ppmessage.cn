@@ -19,6 +19,9 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    padding-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .free-trial .checkmarks .checkmarks-item {
