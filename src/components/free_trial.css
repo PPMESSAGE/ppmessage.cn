@@ -1,0 +1,37 @@
+
+.free-trial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.free-trial .checkmarks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.free-trial .checkmarks .checkmarks-item {
+    margin-right: 25px;
+    margin-bottom: 6px;
+}
+
+.free-trial .checkmarks .checkmarks-item .checkmarks-icon {
+    background: url(../images/checkmark-icon.svg) no-repeat;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-right: 4px;
+}
+
+

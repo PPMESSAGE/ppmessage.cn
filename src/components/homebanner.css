@@ -1,0 +1,28 @@
+.home-banner {
+    background-color: #286efa;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+.link__arrow {
+    color: white;
+    font: heiti;
+    position: relative;
+    padding-right: 17px;
+}
+
+.link__arrow:after {
+    content: "\2192";
+    position: absolute;
+    margin-left: 5px;
+    font-family: IntercomText,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s;
+}

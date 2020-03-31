@@ -1,0 +1,91 @@
+- title: 什么是PPMESSAGE
+  isOrdered: true
+  items:
+    - id: what-can-ppmessage-do
+      title: 产品简介
+    - id: who-should-use-ppmessage
+      title: 产品客户
+    - id: what-unique-features
+      title: 独特功能
+- title: PPMESSAGE产品简介
+  isOrdered: true
+  items:
+    - id: intelligent-customer-service-system
+      title: 智能客服系统
+    - id: marketing-automation-system
+      title: 营销自动化系统
+    - id: cloud-call-center-system
+      title: 云呼叫中心系统
+    - id: intelligent-speech-robot-system
+      title: 智能语音系统
+- title: PPMESSAGE安装指南
+  isOrdered: true
+  items:
+    - id: installation-on-website
+      title: 在网站上安装
+    - id: hide-launcher
+      title: 隐藏聊天按钮
+    - id: open-close-send
+      title: 用程序控制聊天界面
+    - id: installation-for-wechat-official-account
+      title: 在微信上安装
+    - id: installation-named-customer-infomation
+      title: 传递具名信息
+    - id: installation-track-web-event
+      title: 跟踪网站事件
+- title: PPMESSAGE配置指南
+  isOrdered: true
+  items:
+    - id: config-personal-information
+      title: 配置个人资料
+    - id: config-service-team
+      title: 配置客服团队
+    - id: config-customer-fields
+      title: 设置定制字段
+    - id: config-customer-type
+      title: 设置客户类型
+    - id: config-wechat-recv-offline-message
+      title: 接收离线消息
+- title: PPMESSAGE操作指南
+  isOrdered: true
+  items:
+    - id: operation-conversations
+      title: 会话界面
+    - id: operation-customers
+      title: 访客界面
+- title: PPMESSAGE流程管理
+  isOrdered: true
+  items:
+    - id: flow-introduction
+      title: 流程简介
+    - id: flow-variables
+      title: 流程中的变量
+    - id: flow-nodes
+      title: 流程中的节点 
+    - id: flow-web-message
+      title: 网页消息流程 
+    - id: flow-wechat-message
+      title: 微信消息流程
+    - id: flow-track-event
+      title: 事件消息流程 
+- title: PPMESSAGE应用集成
+  isOrdered: true
+  items:
+    - id: app-introduction
+      title: 应用集成简介
+    - id: app-config
+      title: 应用集成配置
+    - id: app-develop
+      title: 应用集成开发
+- title: PPMESSAGE使用场景
+  isOrdered: true
+  items:
+    - id: scene-quick-reply
+      title: 自动消息
+    - id: scene-acquire-in-message
+      title: 获取客户信息
+    - id: scene-satisfy-in-message
+      title: 客户满意度 
+    - id: scene-home-screen-card
+      title: 主页信息卡展示 
+

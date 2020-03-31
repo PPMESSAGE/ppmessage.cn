@@ -1,0 +1,105 @@
+
+.key-features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: -20px;
+}
+
+.key-features-left {
+    width: 33.33333%;
+    min-width: 33.33333%;
+    max-width: 33.33333%;
+    -ms-flex-preferred-size: 33.33333%;
+    flex-basis: 33.33333%;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.key-features-right {
+    
+    width: 66.66667%;
+    min-width: 66.66667%;
+    max-width: 66.66667%;
+    -ms-flex-preferred-size: 66.66667%;
+    flex-basis: 66.66667%;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.key-feature-title {
+    font-family: IntercomGrot,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.44;
+    color: #000;
+    margin: 0;    
+}
+
+
+.feature-item {
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    color: #000;
+    cursor:pointer;
+}
+
+.feature-title {
+    color: #000;
+    font-weight: 600;
+}
+.feature-title:hover{
+    color:#286efa; 
+}
+.feature-title.active {
+    color:#286efa;
+}
+
+
+.feature-item.active::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 32px;
+    width: 10px;
+    height: 26px;
+    background: url(../images/chevron.svg) no-repeat top;
+    background-size: 100%;
+}
+
+.feature-desc {
+    color: #888;
+}
+
+@media screen and (max-width:960px){
+
+}
+
+.feature-desc.active {
+    color: #888;
+}
+
+
+.feature-image {
+    display: none;
+}
+
+.feature-image.active {
+    max-width: 640px;
+    display: block;
+}
+
+.feature-image.active img {
+    max-width: 100%;
+}
+

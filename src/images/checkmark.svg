@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>checkmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design:-Full-flows-REVISED" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.-Choose-plan---from-pricing-page" transform="translate(-762.000000, -933.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1404" height="1684"></rect>
+            <g id="Group-6" transform="translate(762.000000, 925.000000)" fill="#888888" fill-rule="nonzero">
+                <polygon id="checkmark" points="1.66946271 11.5313676 4.60031739 14.4371336 10.218998 8 12 9.79718261 4.8097937 18 0 13.2498031"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
