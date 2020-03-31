@@ -4,19 +4,19 @@ import "./free_trial.css"
 export default () => {
     return (
         <div className="free-trial">
-            <span class="checkmarks">
-                <ul class="checkmarks">
-                    <li class="checkmarks-item">
-                        <span class="checkmarks-icon"></span>
-                        <span class="">14天免费试用</span>
+            <span className="checkmarks">
+                <ul className="checkmarks">
+                    <li className="checkmarks-item">
+                        <span className="checkmarks-icon"></span>
+                        <span>15天免费试用</span>
                     </li>
-                    <li class="checkmarks-item">
-                        <span class="checkmarks-icon"></span>
-                        <span class="">易于安装</span>
+                    <li className="checkmarks-item">
+                        <span className="checkmarks-icon"></span>
+                        <span className="">5分钟安装</span>
                     </li>
-                    <li class="checkmarks-item">
-                        <span class="checkmarks-icon"></span>
-                        <span class="">随时取消</span>
+                    <li className="checkmarks-item">
+                        <span className="checkmarks-icon"></span>
+                        <span className="">随时取消</span>
                     </li>
                 </ul>
             </span>
