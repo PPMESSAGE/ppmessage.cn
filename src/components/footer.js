@@ -11,14 +11,8 @@ class Footer extends React.Component {
      *     super(props);
      * } */
 
-    componentDidMount () {
 
-        window.ppSettings = {
-		background_color:'#3462DF',
-            app_uuid:'a600998e-efff-11e5-9d9f-02287b8c0ebf',
-            server_url: 'https://ppmessage.cn'
-        };
-
+    hasSheetInUrlParams() {
         var urlParams = {};  
         (function () {  
             var match,  
@@ -30,8 +24,19 @@ class Footer extends React.Component {
             while (match = search.exec(query))  
                 urlParams[decode(match[1])] = decode(match[2]);  
         })();
+        return urlParams.sheet;
+    }
+    
+    componentDidMount () {
 
-        if (urlParams.sheet === undefined) {
+        window.ppSettings = {
+		background_color:'#3462DF',
+            app_uuid:'a600998e-efff-11e5-9d9f-02287b8c0ebf',
+            server_url: 'https://ppmessage.cn'
+        };
+
+
+        if (this.hasSheetInUrlParams() === undefined) {
             (function(){
                 var d=document;
                 function l(j){
@@ -48,6 +53,10 @@ class Footer extends React.Component {
     }
 
     render() {
+        if (hasSheetInUrlParams()) {
+            return (<div/>);
+        }
+        
         return (
             <footer className="footer">
                 <div className={styles.heiti}>

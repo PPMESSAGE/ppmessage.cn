@@ -19,6 +19,22 @@ class NavHeader extends React.Component {
         this.scroll = this.scroll.bind(this);
     }
 
+    hasSheetInUrlParams() {
+        var urlParams = {};  
+        (function () {  
+            var match,  
+                pl     = /\+/g,  // Regex for replacing addition symbol with a space  
+                search = /([^&=]+)=?([^&]*)/g,  
+                decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },  
+                query  = window.location.search.substring(1);  
+            
+            while (match = search.exec(query))  
+                urlParams[decode(match[1])] = decode(match[2]);  
+        })();
+        return urlParams.sheet;
+    }
+
+
     scroll() {
         let _scroll_top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
         this.setState({scroll_top: _scroll_top});
@@ -38,6 +54,10 @@ class NavHeader extends React.Component {
         let _navClass = "navheader";
         if (this.state.scroll_top > 20) {
             _navClass = "navheader-fixed";
+        }
+
+        if (this.hasSheetInUrlParams()) {
+            return <div/>
         }
         
         return (
