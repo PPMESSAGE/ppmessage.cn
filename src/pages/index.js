@@ -142,20 +142,17 @@ export default () =>{
                 <div className={styles.container__narrower}>
                     <div className={styles.g__row}>
                         <div className={styles.g__c6_index}>
-                            <div style={{height:"110px"}}></div>
-                            <div className={styles.sp__5}>
+                            <div style={{
+                                paddingTop: "96px"
+                            }}>
                                 <h1 style={{fontSize:"36px",fontWeight:"400"}}>
                                     更好的客户关系从对话开始
                                 </h1>
-                                <div style={{height:"10px"}}>
-                                </div>
-                                <h2 style={{paddingBottom:"10px",fontSize:"20px",color:'#222',fontWeight:"300",lineHeight:"28px"}}>
+                                <h2 style={{paddingBottom:"30px", paddingTop: "10px", fontSize:"20px",color:'#222',fontWeight:"300",lineHeight:"28px"}}>
                                     <p> 打通网站、APP、微信、微博、邮件等渠道 </p>
                                     <p> 智能客服全面提升工作效率，提高咨询转化率 </p>
                                     <p> 全方位销售、营销和在线客服，打造卓越客户体验 </p>
                                 </h2>
-                                <div style={{height:"20px"}}>            
-                                </div>
                                 <EnterYourMobile size="middle" />
                                 <div style={{height:"10px"}}>            
                                 </div>

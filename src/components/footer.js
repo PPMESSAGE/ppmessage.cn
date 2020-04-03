@@ -118,13 +118,13 @@ class Footer extends React.Component {
                                                  
                                                  <div className={styles.footer__link}>
                                                      <a href="/guide-attract-customers" className={styles.lianjie}>
-                                                         <font>引导和吸引用户</font>
+                                                         <font>引导和吸引客户</font>
                                                      </a>
                                                  </div>
                                                  
                                                  <div className={styles.footer__link}>
                                                      <a href="/conversion-business" className={styles.lianjie}>
-                                                         <font>客户支持并提高满意度</font>
+                                                         <font>支持并提高客户满意度</font>
                                                      </a>
                                                  </div>
                                                  

@@ -59,49 +59,37 @@ class NavHeader extends React.Component {
                                     }}>
                                         <div className={styles.g__c7_s}>
                                             <div className={styles.t__h4}>
-                                                <font>
-                                                    产品
-                                                </font>
+                                                产品
                                             </div>
                                             <div className={styles.hr__grey}></div>
                                             <div style={{height:"10px"}}></div>                                    
                                             <a href="/product" className={styles.f__no_und_aways}>
                                                 <div className={styles.f__medium}>
-                                                    <font style={{color:"black",fontSize:"16px"}}>
-                                                        智能客服
-                                                    </font>
+                                                    智能客服
                                                 </div>
                                             </a>
                                             <div style={{height:"10px"}}></div>
                                             <a href="/cloud-call-center" className={styles.f__no_und_aways}>
                                                 <div className={styles.f__medium}>
-                                                    <font style={{color:"black",fontSize:"16px"}}>
-                                                        云呼叫中心
-                                                    </font>
+                                                    云呼叫中心
                                                 </div>
                                             </a>
                                             <div style={{height:"10px"}}></div>
                                             <a href="/intelligent-customer-service-robot" className={styles.f__no_und_aways}>
                                                 <div className={styles.f__medium}>
-                                                    <font style={{color:"black",fontSize:"16px"}}>
-                                                        智能客服机器人
-                                                    </font>
+                                                    智能客服机器人
                                                 </div>
                                             </a>
                                             <div style={{height:"10px"}}></div>
                                             <a href="/intelligent-speech-robot" className={styles.f__no_und_aways}>
                                                 <div className={styles.f__medium}>
-                                                    <font style={{color:"black",fontSize:"16px"}}>
-                                                        智能语音机器人
-                                                    </font>
+                                                    智能语音机器人
                                                 </div>
                                             </a>
                                             <div style={{height:"10px"}}></div>
                                             <a href="/business-custom" className={styles.f__no_und_aways}>
                                                 <div className={styles.f__medium}>
-                                                    <font style={{color:"black",fontSize:"16px"}}>
-                                                        业务定制
-                                                    </font>
+                                                    业务定制
                                                 </div>
                                             </a>
 
@@ -261,9 +249,7 @@ class NavHeader extends React.Component {
                                                 <a href="/pricing" className={styles.f__no_und_aways}>
                                                     <font style={{color:"black"}}>
                                                         <div className={styles.t__h4}>
-                                                            <font>
-                                                                定价
-                                                            </font>
+                                                            定价
                                                         </div>
                                                     </font>
                                                 </a>
@@ -273,9 +259,7 @@ class NavHeader extends React.Component {
                                                    className={styles.f__no_und_aways}>
                                                     <font style={{color:"black"}}>
                                                         <div className={styles.t__h4}>
-                                                            <font>
-                                                                登录
-                                                            </font>
+                                                            登录
                                                         </div>
                                                     </font>
                                                 </a>
@@ -283,7 +267,7 @@ class NavHeader extends React.Component {
                                     </div>
                                 </Hamburger>
                             </div>
-                            <a className={styles.nav__link}>
+                            <a className="navheader-link">
                                 <NavDropdown title="产品">
                                     <div style={{
                                         display: "flex",
@@ -292,58 +276,47 @@ class NavHeader extends React.Component {
                                         flexDirection: "row"
                                     }}>
                                         <a href="/product" className={styles.f__no_und_aways}>
-                                            <div className={styles.holiday}>
-                                                <div className={styles.t__h4}>
-                                                    <font>智能客服</font>
-                                                </div>
-                                                <div className={styles.heise}>
-                                                    <font>一个界面管理来自网页、邮件、电话和社交媒体的所有客户消息</font>
-                                                </div>
+                                            <div className="navheader-dropdown-item-title">
+                                                智能客服
+                                            </div>
+                                            <div className="navheader-dropdown-item-desc">
+                                                一个界面管理来自网页、邮件、电话和社交媒体的所有客户消息
                                             </div>
                                         </a>
 
                                         <a href="/cloud-call-center" className={styles.f__no_und_aways}>
-                                            <div className={styles.holiday}>
-                                                <div className={styles.t__h4}>
-                                                    <font>云呼叫中心</font>
-                                                </div>
-                                                <div >
-                                                    <font>支持跨时区、跨地域、多语言分布式组网，真正All-in-One的客户体验与联络中心</font>
-                                                </div>
+                                            <div className="navheader-dropdown-item-title">
+                                                云呼叫中心
+                                            </div>
+                                            <div className="navheader-dropdown-item-desc">
+                                                支持跨时区、跨地域、多语言分布式组网，真正All-in-One的客户体验与联络中心
                                             </div>
                                         </a>
 
                                         <a href="/intelligent-customer-service-robot" className={styles.f__no_und_aways}>
-                                            <div className={styles.holiday}>
-                                                <div className={styles.t__h4}>
-                                                    <font>智能客服机器人</font>
-                                                </div>
-                                                <div>
-                                                    <font>自主学习、人机无缝协作，提高客服满意度</font>
-                                                </div>
+                                            <div className="navheader-dropdown-item-title">
+                                                智能客服机器人
+                                            </div>
+                                            <div className="navheader-dropdown-item-desc">
+                                                自主学习、人机无缝协作，提高客服满意度
                                             </div>
                                         </a>
 
                                         <a href="/intelligent-speech-robot" className={styles.f__no_und_aways}>
-                                            <div className={styles.holiday}>
-                                                <div className={styles.t__h4}>
-                                                    <font>智能语音机器人</font>
-                                                </div>
-                                                <div >
-                                                    <font>基于智能语音交互的人机融合平台，替代人工销售，延伸售后服务</font>
-                                                </div>
+                                            <div className="navheader-dropdown-item-title">
+                                                智能语音机器人
+                                            </div>
+                                            <div className="navheader-dropdown-item-desc">
+                                                基于智能语音交互的人机融合平台，替代人工销售，延伸售后服务
                                             </div>
                                         </a>
 
-
                                         <a href="/business-custom" className={styles.f__no_und_aways}>
-                                            <div className={styles.holiday}>
-                                                <div className={styles.t__h4}>
-                                                    <font>业务定制</font>
-                                                </div>
-                                                <div>
-                                                    <font>独有的流程生成器与应用集成结合，快速满足企业业务定制需求</font>
-                                                </div>
+                                            <div className="navheader-dropdown-item-title">
+                                                业务定制
+                                            </div>
+                                            <div className="navheader-dropdown-item-desc">
+                                                独有的流程生成器与应用集成结合，快速满足企业业务定制需求
                                             </div>
                                         </a>
                                     </div>
@@ -352,7 +325,7 @@ class NavHeader extends React.Component {
 
                             </a>
 
-                            <a className={styles.nav__link}>
+                            <a className="navheader-link">
 
                                 <NavDropdown title="场景">
                                     <div style={{
@@ -363,30 +336,29 @@ class NavHeader extends React.Component {
                                     }}>
                                         <div>
                                             <a href="/transform-customs" className={styles.f__no_und_aways}>
-                                                <div className={styles.holiday}>
-                                                    <div className={styles.t__h4}>
-                                                        <font style={{color:"black"}}>获取和转化销售线索</font>
-                                                    </div>
-                                                    <div className={styles.t__small}>获取更多商机并达成更多交易</div>
+                                                <div className="navheader-dropdown-item-title">
+                                                    获取和转化销售线索
+                                                </div>
+                                                <div className="navheader-dropdown-item-desc">
+                                                    获取更多商机并达成更多交易
                                                 </div>
                                             </a>
-
-                                            <div style={{height:"10px"}}></div>
 
                                             <a href="/guide-attract-customers" style={{textDecoration:"none"}}>
-                                                <div className={styles.holiday}>
-                                                    <div className={styles.t__h4}><font style={{color:"black"}}>引导和吸引客户</font></div>
-                                                    <div>将更多注册用户转化为活跃的消费客户</div>
+                                                <div className="navheader-dropdown-item-title">
+                                                    引导和吸引客户
+                                                </div>
+                                                <div className="navheader-dropdown-item-desc">
+                                                    将更多注册用户转化为活跃的消费客户
                                                 </div>
                                             </a>
 
-
-                                            <div style={{height:"10px"}}></div>
-
                                             <a href="/conversion-business" style={{textDecoration:"none"}}>
-                                                <div className={styles.holiday}>
-                                                    <div className={styles.t__h4}><font style={{color:"black"}}>客户支持并提高客户满意度</font></div>
-                                                    <div >通过集成多个渠道，自助服务和自动化的现代服务台提高客户满意度并提高效率</div>
+                                                <div className="navheader-dropdown-item-title">
+                                                    支持并提高客户满意度
+                                                </div>
+                                                <div className="navheader-dropdown-item-desc">
+                                                    通过集成多个渠道，自助服务和自动化的现代服务台提高客户满意度并提高效率
                                                 </div>
                                             </a>
                                         </div>
@@ -396,13 +368,13 @@ class NavHeader extends React.Component {
                             </a>
 
                             
-                            <a href="/pricing" className={styles.nav__link}>
-                                <font className={styles.zizi}>定价</font>
+                            <a href="/pricing" className="navheader-link">
+                                定价
                             </a>
                             <a href="https://ppmessage.cn/ppkefu/#!/app/signin"
                                target="_blank" rel="noopener noreferrer"
-                               className={styles.nav__link} style={{paddingRight:"50px"}}>
-                                <font className={styles.zizi}>登录</font>
+                               className="navheader-link" style={{paddingRight:"50px"}}>
+                                登录
                             </a>
                             <div className="navheader-enter-mobile">
                                 <EnterYourMobile size="small"/>
