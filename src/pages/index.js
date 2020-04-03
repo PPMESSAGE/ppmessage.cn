@@ -6,6 +6,7 @@ import WorthCompany from "../components/worthcompany";
 import Layout from "./layout";
 import {Helmet} from "react-helmet";
 import Free from "../components/free_trial";
+import HoverCard from "../components/hovercard";
 
 export default () =>{
 
@@ -166,7 +167,7 @@ export default () =>{
                                 <img style={{maxWidth:"100%"}} src={require("../images/index.jpeg")}
                                      alt="打通网站、APP、微信、微博、邮件等渠道，
                                 智能客服全面提升工作效率，提高咨询转化率，
-                                全方位销售、营销和客户支持，打造卓越客户体验，促进企业成长" />
+                                全方位销售、营销和在线客服，打造卓越客户体验，促进企业成长" />
                             </div>
                         </div>
                     </div>  
@@ -176,67 +177,19 @@ export default () =>{
                     <div className={styles.index_200px_s}></div>
                     <div className={styles.container__narrower}>
                         <h2 className={styles.f__center} style={{"paddingBottom": "40px"}}>
-                            <font>完美的销售，营销和在线客服工具</font>
+                            <font>更好的销售，营销和在线客服工具</font>
                         </h2>
+                        <div style={{"justifyContent": "center", 
+                                     "display": "flex",
+                                     "flex": "0 1 auto",
+                                     "flexWrap": "wrap",
+                                     "flexDirection": "row"}}>
 
-                        <div className={styles.g__row3}>
-                            <div className={styles.g__row} style={{"justifyContent": "center"}}>
-                                <div className={styles.g__c4}>            
-                                    <div className={styles.u__flex}>
-                                        <div className={styles.main1}>
-                                            <div className={styles.sp__2}></div>
-                                            <div className={styles.label}>
-                                                <h2>获取和转化线索
-                                                </h2>
-                                                <font className={styles.ziti}> 通过与网站访客实时互动获取销售线索，通过AI工具评估和分配线索，通过全渠道自动化营销工具将线索转化为商机
-                                                </font>
-                                                <div style={{height:"15px"}}></div>
-                                                <div>
-                                                    <font>智能客服·营销自动化·语音机器人</font></div>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/transform-customs" className={styles.ziti1}>了解更多
-                                                </a>  
-                                            </div>                                                                   </div>              
-                                    </div>  
-                                </div>
-                                <div className={styles.g__c4}>
-                                    <div className={styles.u__flex}>
-                                        <div className={styles.main1}>
-                                            <div className={styles.sp__2}></div>
-                                            <div className={styles.label}>
-                                                <h2>培育和吸引客户
-                                                </h2>
-                                                <font className={styles.ziti}> 发送有针对性的电子邮件，短信，应用内推送消息和智能语音将更多注册用户转化为付费用户
-                                                </font>
-                                                <div style={{height:"15px"}}></div>
-                                                <div><font>营销自动化·智能语音机器人</font></div>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/guide-attract-customers" className={styles.ziti1}>了解更多
-                                                </a>  
-                                            </div>                                
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={styles.g__c4}>
-                                    <div className={styles.u__flex}>
-                                        <div className={styles.main1}>
-                                            <div className={styles.label}>
-                                                <h2>
-                                                    支持并提高客户满意度
-                                                </h2>
-                                                <font className={styles.ziti}>
-                                                    云呼叫中心，客服机器人及与业务无缝集成，在有效降低成本的同时更快的解决客户问题
-                                                </font>
-                                                <div style={{height:"15px"}}></div>
-                                                <div><font>云呼叫中心·客服机器人</font></div>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/conversion-business" className={styles.ziti1}>
-                                                    了解更多
-                                                </a>  
-                                            </div>                                                                       </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <HoverCard texts={{title: "获取和转化线索", "desc": "通过与网站访客实时互动获取销售线索，通过AI工具评估和分配线索，通过全渠道自动化营销工具将线索转化为商机", link:{title: "智能客服·营销自动化·语音机器人", href: "/transform-customs"}}}/>
+                            <HoverCard texts={{title: "培育和吸引客户", "desc": "发送有针对性的电子邮件，短信，应用内推送消息和智能语音将更多注册用户转化为付费用户", link:{title: "营销自动化·智能语音机器人", href: "/guide-attract-customers"}}}/>
+
+                            <HoverCard texts={{title: "支持并提高客户满意度", "desc": "云呼叫中心，客服机器人及与业务无缝集成，在有效降低成本的同时更快的解决客户问题", link:{title: "云呼叫中心·客服机器人", href: "/conversion-business"}}}/>
+                            
                         </div>
 
                     </div>

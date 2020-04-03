@@ -95,8 +95,13 @@ export default NavigationFooter;
 const PrimaryLink = ({children, to, location}) => {
   // quick fix
   // TODO: replace this with better method of getting correct full url
-  const updatedUrl =
-    (location && location.pathname.replace(/\/[^/]+\.html/, '/' + to)) || to;
+    let updatedUrl =
+        (location && location.pathname.replace(/\/[^/]+\.html/, '/' + to)) || to;
+
+    if (location.search == "?sheet=true") {
+        updatedUrl = updatedUrl + location.search
+    }
+    
   return (
     <Link
       css={{
