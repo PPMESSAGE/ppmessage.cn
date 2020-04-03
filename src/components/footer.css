@@ -114,6 +114,28 @@ footer .footer-container-container {
     
     .footer .start-use .enter-mobile .enter-mobile-enter {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
-        
+
+    .footer .start-use .enter-mobile .enter-mobile-enter .input-column {
+        width: 75%;
+    }
+
+    .footer .free-trial .checkmarks {
+        flex-direction: column;
+    }
+
+    .footer .icp {
+        display: flex;
+        flex-direction: column;
+        opacity:0.5;
+    }
+
+    .footer .seo {
+        display: flex;
+        flex-direction: column;
+        opacity:0.5;
+    }
+
 }

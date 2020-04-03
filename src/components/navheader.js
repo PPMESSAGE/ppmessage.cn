@@ -51,7 +51,12 @@ class NavHeader extends React.Component {
                         <div className={styles.nav__content}>
                             <div className={styles.Hamburger_div}>
                                 <Hamburger>
-                                    <div className={styles.g__row}>
+                                    <div style={{
+                                        display: "flex",
+                                        flex: "0 1 auto",
+                                        flexWrap: "wrap",
+                                        flexDirection: "row"
+                                    }}>
                                         <div className={styles.g__c7_s}>
                                             <div className={styles.t__h4}>
                                                 <font>
@@ -278,9 +283,14 @@ class NavHeader extends React.Component {
                                     </div>
                                 </Hamburger>
                             </div>
-                            <div className={styles.nav__link}>
+                            <a className={styles.nav__link}>
                                 <NavDropdown title="产品">
-                                    <div className={styles.g__row}>
+                                    <div style={{
+                                        display: "flex",
+                                        flex: "0 1 auto",
+                                        flexWrap: "wrap",
+                                        flexDirection: "row"
+                                    }}>
                                         <a href="/product" className={styles.f__no_und_aways}>
                                             <div className={styles.holiday}>
                                                 <div className={styles.t__h4}>
@@ -340,12 +350,17 @@ class NavHeader extends React.Component {
 
                                 </NavDropdown>
 
-                            </div>
+                            </a>
 
-                            <div className={styles.nav__link}>
+                            <a className={styles.nav__link}>
 
                                 <NavDropdown title="场景">
-                                    <div className={styles.g__row}>
+                                    <div style={{
+                                        display: "flex",
+                                        flex: "0 1 auto",
+                                        flexWrap: "wrap",
+                                        flexDirection: "row"
+                                    }}>
                                         <div>
                                             <a href="/transform-customs" className={styles.f__no_und_aways}>
                                                 <div className={styles.holiday}>
@@ -378,7 +393,7 @@ class NavHeader extends React.Component {
                                     </div>
                                 </NavDropdown>
 
-                            </div>
+                            </a>
 
                             
                             <a href="/pricing" className={styles.nav__link}>
@@ -386,13 +401,11 @@ class NavHeader extends React.Component {
                             </a>
                             <a href="https://ppmessage.cn/ppkefu/#!/app/signin"
                                target="_blank" rel="noopener noreferrer"
-                               className={styles.nav__link}>
+                               className={styles.nav__link} style={{paddingRight:"50px"}}>
                                 <font className={styles.zizi}>登录</font>
                             </a>
-                            <div className={styles.nav__cta}>
-                                <div >
-                                    <EnterYourMobile size="small"/>
-                                </div>
+                            <div className="navheader-enter-mobile">
+                                <EnterYourMobile size="small"/>
                             </div>
                         </div>
                     </div>            

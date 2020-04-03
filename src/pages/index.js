@@ -152,7 +152,7 @@ export default () =>{
                                 <h2 style={{paddingBottom:"10px",fontSize:"20px",color:'#222',fontWeight:"300",lineHeight:"28px"}}>
                                     <p> 打通网站、APP、微信、微博、邮件等渠道 </p>
                                     <p> 智能客服全面提升工作效率，提高咨询转化率 </p>
-                                    <p> 全方位销售、营销和客户支持，打造卓越客户体验 </p>
+                                    <p> 全方位销售、营销和在线客服，打造卓越客户体验 </p>
                                 </h2>
                                 <div style={{height:"20px"}}>            
                                 </div>
@@ -173,7 +173,7 @@ export default () =>{
                     </div>  
                 </div>
 
-                <section >
+                <section>
                     <div className={styles.index_200px_s}></div>
                     <div className={styles.container__narrower}>
                         <h2 className={styles.f__center} style={{"paddingBottom": "40px"}}>
