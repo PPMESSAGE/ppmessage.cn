@@ -54,7 +54,9 @@ export default () => {
                                 <EnterYourMobile size="middle"/> 
                             </div>
                             <div style={{height:"10px"}}></div>
-                            <Free />          
+                            <di style={{display:"flex", flexDirection:"row", justifyContent:"center"}}>
+                                <Free />
+                            </di>
                         </div>        
                     </div>
                 </div>

@@ -5,6 +5,8 @@ import {Helmet} from "react-helmet";
 import Layout from "./layout";
 import Free from "../components/free_trial";
 
+import "./conversion-business.css"
+
 export default () => (
 	<Layout>
         <Helmet>
@@ -53,102 +55,88 @@ export default () => (
                         <div className={styles.u__inline_transform}>                                      <EnterYourMobile size="middle"/> 
                         </div>
                         <div style={{height:"10px"}}></div>
-                        <Free />          
+                        <div style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
+                            <Free />
+                        </div>
                     </div>        
                 </div>
             </div>
             <div style={{height:'200px'}}></div>
 
-            <section className={styles.section_transform1}>
-                <div className={styles.container}>
-                    <div className={styles.g__row}>
+            <section>
+                <div className={styles.container__narrower}>
 
-                        <div>
-
-                            <div className={styles.chuangjian_tranform1}>
-                                <a href="#full-channel" className={styles.lianjie}>
-                                    <div className={styles.product__breakdown__image}>
-                                        <img src={require("../images/142.png")} alt="将网页、移动端、社交媒体、邮件、电话等渠道的会话转入统一座席工作台，并通过团队协作快速处理客户问题" /></div>
-                                        <div style={{height:"10px"}}></div>
-                                        <div className={styles.t__h3}>
-                                            <font>全渠道客服</font>
-                                        </div>
-                                        <div className={styles.t__small_s}>
-                                            <font>
-                                                将网页、移动端、社交媒体、邮件、电话等渠道的会话转入统一座席工作台，并通过团队协作快速处理客户问题
-                                            </font>
-                                        </div>
-                                        <div className={styles.product__learn_more} style={{margin:"80px"}}>
-                                            <span>
-                                                <font className={styles.smallerbiaoti}>了解更多</font>
-                                            </span>                  
-                                        </div>                
-                                </a>
-                            </div>
-
-                            <div className={styles.chuangjian_tranform2}>
-                                <a href="#call-center" className={styles.lianjie}>
-                                    <div className={styles.product__breakdown__image}>
-                                        <img src={require("../images/143.png")} alt="跨国、跨时区，多语言，分布式部署，灵活扩容，功能稳定，满足各种规模企业需求" /></div>
-                                        <div style={{height:"10px"}}></div>
-                                        <div className={styles.t__h3}>
-                                            <font>全球呼叫中心</font>
-                                        </div>
-                                        <div className={styles.t__small_s}>
-                                            <font>
-                                                跨国、跨时区，多语言，分布式部署，灵活扩容，功能稳定，满足各种规模企业需求
-                                            </font>
-                                        </div>
-                                        <div className={styles.product__learn_more} style={{margin:"80px"}}>
-                                            <span>
-                                                <font className={styles.smallerbiaoti}>了解更多</font>
-                                            </span>                  
-                                        </div>                
-                                </a>
-                            </div>
-                            <div className={styles.chuangjian_tranform3}>
-                                <a href="#tickets" className={styles.lianjie}>
-                                    <div className={styles.product__breakdown__image}>
-                                        <img src={require("../images/144.png")} alt="打通售前售后环节，根据各种渠道的客户咨询消息创建工单，工单可自动分配、转派、变更、提醒和归档，业务流程和SLA随心定制" /></div>
-                                        <div style={{height:"10px"}}></div>
-                                        <div className={styles.t__h3}>
-                                            <font>工单系统</font>
-                                        </div>
-                                        <div className={styles.t__small_s}>
-                                            <font>
-                                                打通售前售后环节，根据各种渠道的客户咨询消息创建工单，工单可自动分配、转派、变更、提醒和归档，业务流程和SLA随心定制
-                                            </font>
-                                        </div>
-                                        <div className={styles.product__learn_more} style={{margin:"80px"}}>
-                                            <span>
-                                                <font className={styles.smallerbiaoti}>了解更多</font>
-                                            </span>                  
-                                        </div>                
-                                </a>
-                            </div>
-                            <div className={styles.chuangjian_tranform4}>
-                                <a href="#nlp" className={styles.lianjie}>
-                                    <div className={styles.product__breakdown__image}>
-                                        <img src={require("../images/145.png")} alt="基于NLP， 365天不间断服务，高效率解决重复性问题，大幅降低人工客服成本" /></div>
-                                        <div style={{height:"10px"}}></div>
-                                        <div className={styles.t__h3}>
-                                            <font>智能客服机器人</font>
-                                        </div>
-                                        <div className={styles.t__small_s}>
-                                            <font>
-                                                基于NLP， 365天不间断服务，高效率解决重复性问题，大幅降低人工客服成本
-                                            </font>
-                                        </div>
-                                        <div className={styles.product__learn_more} style={{margin:"80px"}}>
-                                            <span>
-                                                <font className={styles.smallerbiaoti}>了解更多</font>
-                                            </span>
-                                            
-                                        </div>                
-                                </a>
-                            </div>                            
-                        </div>
+                    <div className="conversion-cards">
                         
+                        <div className="conversion-card">
+
+                            <a href="#full-channel" className={styles.lianjie}>
+
+                                <div className="conversion-card-inner">
+                                    <div className="conversion-card-inner-image-container">
+                                        <img src={require("../images/142.png")} alt="将网页、移动端、社交媒体、邮件、电话等渠道的会话转入统一座席工作台，并通过团队协作快速处理客户问题" />
+                                    </div>
+                                    <div style={{height:"10px"}}></div>
+                                    <div className={styles.t__h3}>
+                                        全渠道客服
+                                    </div>
+                                    <div className={styles.t__small_s}>
+                                        将网页、移动端、社交媒体、邮件、电话等渠道的会话转入统一座席工作台，并通过团队协作快速处理客户问题
+                                    </div>
+                                    <div className={styles.product__learn_more} style={{margin:"80px"}}>
+                                        <span>
+                                            <font className={styles.smallerbiaoti}>了解更多</font>
+                                        </span>                  
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div className="conversion-card">
+                            <a href="#call-center" className={styles.lianjie}>
+                                <div className="conversion-card-inner">
+                                    <div className="conversion-card-inner-image-container">
+                                        <img src={require("../images/143.png")} alt="跨国、跨时区，多语言，分布式部署，灵活扩容，功能稳定，满足各种规模企业需求" />
+                                    </div>
+                                    <div style={{height:"10px"}}></div>
+                                    <div className={styles.t__h3}>
+                                        全球呼叫中心
+                                    </div>
+                                    <div className={styles.t__small_s}>
+                                        跨国、跨时区，多语言，分布式部署，灵活扩容，功能稳定，满足各种规模企业需求
+                                    </div>
+                                    <div className={styles.product__learn_more} style={{margin:"80px"}}>
+                                        <span>
+                                            <font className={styles.smallerbiaoti}>了解更多</font>
+                                        </span>                  
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div className="conversion-card">
+                            <a href="#nlp" className={styles.lianjie}>
+                                <div className="conversion-card-inner">
+                                    <div className="conversion-card-inner-image-container">
+                                        <img src={require("../images/145.png")} alt="基于NLP， 365天不间断服务，高效率解决重复性问题，大幅降低人工客服成本" />
+                                    </div>
+                                    <div style={{height:"10px"}}></div>
+                                    <div className={styles.t__h3}>
+                                        人机融合
+                                    </div>
+                                    <div className={styles.t__small_s}>
+                                        基于自然语言处理，365天不间断服务，高效率解决重复性问题，人工随时干预，大幅提升单人客服效率
+                                    </div>
+                                    <div className={styles.product__learn_more} style={{margin:"80px"}}>
+                                        <span>
+                                            <font className={styles.smallerbiaoti}>了解更多</font>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </div>                                                    
                     </div>
                 </div>
             </section>
@@ -319,83 +307,6 @@ export default () => (
                 
             </section>
 
-            <section id="tickets" className={styles.section}>
-                
-                <div className={styles.container_z}>
-                    <div className={styles.g__row_z}>
-                        <div className={styles.g__c6}>
-                            <img src={require("../images/71.jpeg")} alt="新一代全渠道工单系统" />
-                        </div>
-                        <div className={styles.g__c5_z}>
-
-                            
-                            
-                            <div style={{height:"20px"}}></div>
-                            <h3 className={styles.t__h2}>
-                                <font>
-                                    新一代全渠道工单系统
-                                </font>
-                            </h3>
-                            <div style={{height:"10px"}}></div>
-                            <div className={styles.max__550}>
-                                <font className={styles.tigongzhichi}>
-                                    打通售前售后环节，根据网页、邮件、电话和社交媒体等各种渠道的客户咨询消息创建工单，工单可自动分配、转派、变更、提醒和归档，业务流程和SLA随心定制
-
-                                </font>
-                            </div>
-                            
-                            <div style={{height:"30px"}}></div>
-                            <div className={styles.u__hidden__md}>
-                                <div className={styles.u__inline}>                                
-                                </div>
-                            </div>
-                            <div style={{height:"30px"}}></div>
-                        </div>          
-                    </div>
-                    <div style={{height:"40px"}}></div>
-                    <div className={styles.g__row_g}>
-                        <div className={styles.g__c3}></div>
-                        <div className={styles.g__c8}>
-                            <div className={styles.g__row_f}>
-                                <div className={styles.g__c6}>
-                                    <div className={styles.f__left}>
-                                        <div className={styles.product__feature_icon}>
-                                            <img src={require("../icon/7.3.5.png")} alt="无论何时与他们聊天，都可以查看团队收件箱中客户最后三个会话" />
-                                        </div>
-                                        <div className={styles.sp__left_4}>
-                                            <div className={styles.t__small}>
-                                                <font>最近的对话</font>
-                                            </div>
-                                            <div style={{height:"10px"}}></div>
-                                            <div className={styles.t__small}>
-                                                无论何时与他们聊天，都可以查看团队收件箱中客户最后三个会话。
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-     
-                                <div className={styles.g__c6}>
-                                    <div className={styles.f__left}>
-                                        <div className={styles.product__feature_icon}>
-                                            <img src={require("../icon/7.3.7.png")} alt="将用户添加到客户对话中，以便每个人都作为一个群组进行交流，从而更快的解决问题" />
-                                        </div>
-                                        <div className={styles.sp__left_4}>
-                                            <div className={styles.t__small}>
-                                                <font>小组对话</font>
-                                            </div>
-                                            <div style={{height:"10px"}}></div>
-                                            <div className={styles.t__small}>
-                                                将用户添加到客户对话中，以便每个人都作为一个群组进行交流，从而更快的解决问题
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>        
-                </div>
-            </section>
             
             <div style={{height:"50px"}}></div>
             
@@ -404,12 +315,10 @@ export default () => (
                     <div className={styles.u__zfix}>                   
                         <div className={styles.index_100px}></div>
                         <h2 className={styles.t__h2}>
-                            <font>
-                                人机融合，助力客户服务创新升级
-                            </font>
+                            人机融合，提升座席工作效率，助力客户服务创新升级
                         </h2>                    
                         <font className={styles.tigongzhichi}>
-                            基于NLP， 365天不间断服务，高效率解决重复性问题，大幅降低人工客服成本
+                            基于自然语言处理，365天不间断服务，高效率解决重复性问题，人工随时干预，大幅提升单人客服效率
                         </font>
                         <div style={{height:"20px"}}></div>
                         <div>

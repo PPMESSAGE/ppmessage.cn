@@ -1,0 +1,40 @@
+.conversion-card {
+
+    width: 33.33333%;
+    min-width: 33.33333%;
+    max-width: 33.33333%;
+    -ms-flex-preferred-size: 33.33333%;
+    flex-basis: 33.33333%;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    font-size: 14px;
+    letter-spacing: .15px;
+    color: #888;
+    -webkit-box-flex: 0;
+
+}
+
+.conversion-cards {
+    justify-content: center;
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.conversion-card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.conversion-card-inner-image-container {
+    height: 128px;
+}
+
+.conversion-card-inner-image-container img {
+    height: 100%;
+}
