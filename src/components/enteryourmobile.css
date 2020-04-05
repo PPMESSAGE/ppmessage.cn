@@ -54,8 +54,8 @@ button {
   -moz-appearance: none;
 
   
-  border-color: #286efa;
-  background: #286efa;
+  border-color: rgb(52,98,223);
+  background: rgb(52,98,223);
   color: #fff;
 }
 
