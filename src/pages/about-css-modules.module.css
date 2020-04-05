@@ -168,12 +168,12 @@
     flex-basis: 0%;
 }
 .btn__primary {
-    border-color: #286EFA;
+    border-color: rgb(52,98,223);
     border-top-color: rgb(40, 110, 250);
     border-right-color: rgb(40, 110, 250);
     border-bottom-color: rgb(40, 110, 250);
     border-left-color: rgb(40, 110, 250);
-    background: #286EFA;
+    background: rgb(52,98,223);
 
     background-position-x: initial;
     background-position-y: initial;
@@ -197,12 +197,12 @@
     padding-left: 1.2em;
 }
 .btn {
-    border-color: #286efa;
+    border-color: rgb(52,98,223);
     border-top-color: rgb(40, 110, 250);
     border-right-color: rgb(40, 110, 250);
     border-bottom-color: rgb(40, 110, 250);
     border-left-color: rgb(40, 110, 250);
-    background: #286efa;
+    background: rgb(52,98,223);
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
@@ -262,7 +262,7 @@
 }
 .cta__btn{
     display:inline;
-    background-color:blue;
+    background-color:rgb(52,98,223);
 
 }
 .container__narrower{
@@ -539,7 +539,7 @@
     transition-duration: 0s, 0.2s;
     transition-timing-function: ease, ease;
     transition-delay: 0s, 0s;
-    border-color: #286efa;
+    border-color: rgb(52,98,223);
     border-top-color: rgb(40, 110, 250);
     border-right-color: rgb(40, 110, 250);
     border-bottom-color: rgb(40, 110, 250);
@@ -603,7 +603,7 @@
 .ziti1{
     font-size:16px;
     line-height:1.5;
-    color:#286efa;
+    color:rgb(52,98,223);
     text-decoration:none;
 } 
 
@@ -661,6 +661,7 @@
 .holiday:hover{
     color:#286efa;
 }
+
 .section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -756,7 +757,7 @@
 }
 .f:hover {
     cursor: pointer;
-    color:blue;
+    color:rgb(52,98,223);
 }
 .xiaozi{
     color:#888;
@@ -781,7 +782,7 @@
     color:#888;    
 }
 .lianjie:hover{
-    color:#286efa;
+    color:rgb(52,98,223);
 }
 .smallerbiaoti{
     font-size:10px
@@ -939,7 +940,7 @@
     color:#888;  
 }
 .lck:hover{
-    color:blue;
+    color:rgb(52,98,223);
 }
 .inoupbig1{
     font-family: IntercomText,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -1929,8 +1930,8 @@
     color: #677785;
 }
 .btn_s{
-    border-color: blue;
-    color: #286efa;
+    border-color: rgb(52,98,223);
+    color: rgb(52,98,223);
     width: 100%;
     font-family: IntercomText,Helvetica Neue,Helvetica,Arial,sans-serif;
     display: inline-block;
@@ -1957,7 +1958,7 @@
     -webkit-appearance: none;
 }
 .btn_s:hover{
-    background-color:blue;
+    background-color:rgb(52,98,223);
     color:white;
 }
 .heiti{
@@ -2653,7 +2654,7 @@
     display: inline-block;
     width: 25px;
     height: 2px;
-    border-top: 2px solid #286efa;
+    border-top: 2px solid rgb(52,98,223);
     -webkit-transition: border-color .1s;
     transition: border-color .1s;
     cursor: pointer;
@@ -2663,7 +2664,7 @@
 .link__hamburger::before{
     content: " ";
     position: absolute;
-    border-top: 2px solid #286efa;
+    border-top: 2px solid rgb(52,98,223);
     height: 0;
     left: 0;
     right: 0;
@@ -2673,7 +2674,7 @@
 .link__hamburger::after{
     content: " ";
     position: absolute;
-    border-top: 2px solid #286efa;
+    border-top: 2px solid rgb(52,98,223);
     height: 0;
     left: 0;
     right: 0;
