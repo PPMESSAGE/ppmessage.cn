@@ -1,9 +1,9 @@
 import React from 'react'
 
 import styles from "../pages/about-css-modules.module.css";
-import "./imagehovercard.css";
+import "./iconhovercard.css";
 
-class ImageHoverCard extends React.Component {
+class IconHoverCard extends React.Component {
 
     constructor(props) {
         super(props);
@@ -20,13 +20,21 @@ class ImageHoverCard extends React.Component {
         
         return (
             <div style={{display:"flex", "justifyContent":"center"}}>
-                <div className="image-hovercard">
+                <div className="icon-hovercard">
 
-                    <div className="image-hovercard-image">
-                        <img src={require("../images/" + texts.image)}/>
+                    <div className="icon-hovercard-image">
+                        <img src={require("../icon/" + texts.image)}/>
                     </div>
                     
-                    <div className={styles.label}>
+                    <div style={{
+                        color: "#000",
+                        fontSize: "11px",
+                        paddingTop: "5px",
+                        paddingRight: "5px",
+                        paddingBottom: "1px",
+                        textAlign: "left",
+                        fontWeight: "600",
+                    }}>
                         <h2>{texts.title}</h2>
                         <p style={{
                             fontSize:"14px",
@@ -35,14 +43,7 @@ class ImageHoverCard extends React.Component {
                             paddingTop: "15px"
                         }}>
                             {texts.desc}
-                        </p>
-                        <div>
-                            <p>{texts.link.title}</p>
-                        </div>
-                        
-                        <a href={texts.link.href} className={styles.ziti1}>
-                            了解更多
-                        </a>  
+                        </p>                        
                     </div>
                 </div>              
             </div>  
@@ -50,4 +51,4 @@ class ImageHoverCard extends React.Component {
     }
 }
 
-export default ImageHoverCard
+export default IconHoverCard

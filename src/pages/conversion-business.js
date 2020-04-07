@@ -4,6 +4,7 @@ import EnterYourMobile from "../components/enteryourmobile";
 import {Helmet} from "react-helmet";
 import Layout from "./layout";
 import Free from "../components/free_trial";
+import IconHoverCard from "../components/iconhovercard"
 
 import "./conversion-business.css"
 
@@ -47,12 +48,10 @@ export default () => (
                         </h1>
                         <div style={{height:"10px"}}></div>
                         <h2 className={styles.t__h3_d}>
-                            {/* <font>
-                                通过网页消息、应用内消息、电话、短信、邮件、微信等全渠道快速响应客户问题并提供解决方案，提高客户满意度，将您的满意客户转化为忠实客户，把忠实客户转化为企业拥趸
-                                </font> */}
                         </h2>
                         <div style={{height:"20px"}}></div>
-                        <div className={styles.u__inline_transform}>                                      <EnterYourMobile size="middle"/> 
+                        <div className={styles.u__inline_transform}>
+                            <EnterYourMobile size="middle"/> 
                         </div>
                         <div style={{height:"10px"}}></div>
                         <div style={{display: "flex", flexDirection: "row", justifyContent: "center"}}>
@@ -149,15 +148,11 @@ export default () => (
                         <div className={styles.g__c6}>
                             <div style={{height:"20px"}}></div>
                             <h3 className={styles.t__h2}>
-                                <font>
-                                    通过一个界面处理所有渠道的客户咨询
-                                </font>
+                                通过一个界面处理所有渠道的客户咨询
                             </h3>
                             <div style={{height:"10px"}}></div>
                             <div className={styles.max__600}>
-                                <font>
-                                    迈向真正的多触点深层客户互动解决方案，支持电子邮件、聊天、SMS、电话、协作浏览、内容共享 。各种渠道之间的无缝过渡消除了客户服务过程中的冲突，同时保留背景情境，并能收集相关的宝贵资讯。完整客户体验在您面前一览无遗，向您呈现出整个客户服务过程及相关背景 - 从即时联络到以往互动无所不包
-                                </font>
+                                支持电子邮件、聊天、微信、电话、协作浏览、内容共享 。各种渠道之间的无缝过渡消除了客户服务过程中的冲突.
                             </div>
                         </div>
                         
@@ -166,85 +161,24 @@ export default () => (
                                 <div className={styles.u__inline}>
                                     <div className={styles.gallery}>
                                         <div className={styles.gallery__img}>
-                                            <img src={require("../images/75.png")} alt="迈向真正的多触点深层客户互动解决方案，支持电子邮件、聊天、SMS、电话、协作浏览、内容共享 。各种渠道之间的无缝过渡消除了客户服务过程中的冲突，同时保留背景情境，并能收集相关的宝贵资讯。完整客户体验在您面前一览无遗，向您呈现出整个客户服务过程及相关背景 - 从即时联络到以往互动无所不包" />
+                                            <img style={{maxWidth:"480px"}} src={require("../images/75.png")} alt="迈向真正的多触点深层客户互动解决方案，支持电子邮件、聊天、SMS、电话、协作浏览、内容共享 。各种渠道之间的无缝过渡消除了客户服务过程中的冲突，同时保留背景情境，并能收集相关的宝贵资讯。完整客户体验在您面前一览无遗，向您呈现出整个客户服务过程及相关背景 - 从即时联络到以往互动无所不包" />
                                         </div>                    
                                     </div>
                                 </div>
                             </div>
                         </div>            
                     </div>
-                    <div style={{display:"block"}}></div>       
-                    <div className={styles.g__row}>
-                        <div className={styles.g__c1}></div>
-                        <div className={styles.g__c9}>
-                            <div className={styles.g__row}>
-                                <div className={styles.g__c12}></div>
-
-                                <div className={styles.g__c6}>
-                                    <div className={styles.f__left}>
-                                        <div className={styles.product__feature_icon}>
-                                            <img src={require("../icon/7.3.1.png")} alt="团队成员可在同一时间看到和相应新咨询消息，大幅降低首次响应时间" />
-                                        </div>
-                                        <div style={{height:"10px"}}></div>
-                                        <div className={styles.sp__left_4}>
-                                            <div className={[styles.t__small,styles.f__bold]}>
-                                                <font>团队合作</font>
-                                            </div>
-                                            <div className={styles.t__small}>
-                                                <font>
-                                                    团队成员可在同一时间看到和相应新咨询消息，大幅降低首次响应时间
-                                                </font>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div className={styles.g__c6}>
-                                    <div className={styles.f__left}>
-                                        <div className={styles.product__feature_icon}>
-                                            <img src={require("../icon/7.3.3.png")} alt="向团队成员展示客户基本信息和历史记录，便于快速解决客户问题" />
-                                        </div>
-                                        <div style={{height:"10px"}}></div>
-                                        <div className={styles.sp__left_4}>
-                                            <div className={[styles.t__small,styles.f__bold]}>
-                                                <font>客户基本信息展示</font>
-                                            </div>
-                                            <div className={styles.t__small}>
-                                                <font>
-                                                    向团队成员展示客户基本信息和历史记录，便于快速解决客户问题
-                                                </font>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className={styles.g__c6}>
-                                    <div className={styles.f__left}>
-                                        <div className={styles.product__feature_icon}>
-                                            <img src={require("../icon/7.3.4.png")} alt="与知识库无缝集成，向客服智能建议问题答案，提高客户满意度" />
-                                        </div>
-                                        <div style={{height:"10px"}}></div>
-                                        <div className={styles.sp__left_4}>
-                                            <div className={[styles.t__small,styles.f__bold]}>
-                                                <font>智能建议</font>
-                                            </div>
-                                            <div className={styles.t__small}>
-                                                <font>
-                                                    与知识库无缝集成，向客服智能建议问题答案，提高客户满意度
-                                                </font>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    
+                    <div className={styles.g__row}>                                
+                        <IconHoverCard texts={{title:"团队合作", desc:"团队成员可在同一时间看到和相应新咨询消息，大幅降低首次响应时间", image:"7.3.1.png"}} />
+                        
+                        <IconHoverCard texts={{title:"客户基本信息展示", desc:"向团队成员展示客户基本信息和历史记录，便于快速解决客户问题", image:"7.3.3.png"}} />
+                        
+                        <IconHoverCard texts={{title:"智能建议", desc:"与知识库无缝集成，向客服智能建议问题答案，提高客户满意度", image:"7.3.4.png"}} />
                     </div>
                 </div>
                 
             </section>
-
-            <div className={styles.index_200px_conversion_businese}></div>
 
             <section id="call-center" className={styles.section}>        
                 
@@ -254,9 +188,7 @@ export default () => (
                         <div className={styles.g__c6}>
                             <div style={{height:"100px"}}></div>
                             <h3 className={styles.t__h2}>
-                                <font>
-                                    全球化呼叫中心系统
-                                </font>
+                                全球化呼叫中心系统
                             </h3>
                             <div style={{height:"10px"}}></div>
                             <div className={styles.max__600}>
@@ -277,31 +209,7 @@ export default () => (
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        
-                        <div className={styles.g__c6} >
-                            <img src={require("../images/76.png")} alt="可扩展、大容量，性能稳定" />
-                        </div>
-                        
-                        <div className={styles.g__c5_z}>
-
-                            
-                            <h3 className={styles.t__h2}>
-                                <font>
-                                    可扩展、大容量，性能稳定
-                                </font>
-                            </h3>
-                            <div style={{height:"10px"}}></div>
-                            <div>
-                                <font className={styles.tigongzhichi}>
-                                    支持万级并发呼叫，系统可用性99.99%
-                                    海量录音及实时识别
-
-
-                                </font>
-                            </div>                                    
-                        </div>          
+                        </div>                                               
                     </div>                    
                 </div> 
                 

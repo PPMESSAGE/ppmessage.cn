@@ -1,4 +1,4 @@
-.image-hovercard
+.icon-hovercard
 {
     width: 360px;
     z-index:99;
@@ -17,17 +17,12 @@
     
 }
 
-.image-hovercard:hover{
+.icon-hovercard:hover{
     background:rgba(255,255,255,0);
     transform: scale(1.1);
     box-shadow:0 3px 13px 3px rgba(90,122,190,.08);
 }
 
-.image-hovercard-image
-{
-    text-align:center;
-}
-
-.image-hovercard-image img {
-    max-width: 90px;
+.icon-hovercard-image img {
+    max-width: 60px;
 }

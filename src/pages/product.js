@@ -5,6 +5,7 @@ import FeatherModal from "../components/feathermodal";
 import Layout from "./layout";
 import {Helmet} from "react-helmet";
 import Free from "../components/free_trial";
+import HoverCard from "../components/hovercard";
 
 export default () => (
 	<Layout>
@@ -28,7 +29,7 @@ export default () => (
                             </div>
                             <h3 style={{color:'#888'}}>
                                 <font className={styles.biaoti}>
-                                    在您的网站，移动应用，电子邮件和社交网络中分配，回复和关闭对话
+                                    在您的网站，移动应用，电子邮件和社交网络中与访客和客户在线对话
                                 </font>
                             </h3>
                             <div style={{height:"20px"}}>            
@@ -50,108 +51,13 @@ export default () => (
 
 
             <section>
-                <div className={styles.container}>
-                    <div className={styles.g__row}>
-                        <div className={styles.g__c3}>
-                            <div className={styles.chuangjian} style={{marginLeft:"2em"}}>
-                                <a href="#qudao" className={styles.lianjie}>
-                                    <div>                
-                                    </div>
-                                    <div style={{height:'5em'}}></div>                           
-                                    <div className={styles.t__h3}>
-                                        <font >多渠道在线客服
-                                        </font>
-                                    </div>
-                                    <div style={{height:'5px'}}></div>
-                                    <div className={styles.t__small_s}>
-                                        <font className={styles.t__small_s}>网页、移动端、社交媒体、电话、邮件等多渠道接入客户对话
-                                        </font>                  
-                                    </div>
-                                    <div className={styles.product__learn_more}>
-                                        <div style={{height:'2em'}}></div>
-                                        <span>
-                                            <font className={styles.smallerbiaoti}>了解更多</font>
-                                        </span>                  
-                                    </div>
-                                    
-                                </a>
-                            </div>
+                <div className={styles.container__narrower}>
+                    
+                    <HoverCard texts={{title: "多渠道在线客服", desc:"网页、移动端、社交媒体、电话、邮件等多渠道接入客户对话", link:{href:"#qudao"}}} />
 
-                            <div className={styles.chuangjian} >
-                                <a href="#jiemian" className={styles.lianjie}>
-                                    <div>                
-                                    </div>
-                                    <div style={{height:'5em'}}></div>                           
-                                    <div className={styles.t__h3}>
-                                        <font >单一界面
-                                        </font>
-                                    </div>
-                                    <div style={{height:'5px'}}></div>
-                                    <div className={styles.t__small_s}>
-                                        <font className={styles.t__small_s}>
-                                            为在线客服团队配备统一的全渠道界面
-                                        </font>
-                                    </div>
-
-                                    <div className={styles.product__learn_more}>
-                                        <div style={{height:'2em'}}></div>
-                                        <span>
-                                            <font className={styles.smallerbiaoti}>了解更多</font>
-                                        </span>                  
-                                    </div>                
-                                </a>
-                            </div>
-
-                            <div className={styles.chuangjian} >
-                                <a href="#gongzuoliucheng" className={styles.lianjie}>
-                                    <div>                
-                                    </div>
-                                    <div style={{height:'5em'}}></div>                           
-                                    <div className={styles.t__h3}>
-                                        <font >多渠道自动化工作流程
-                                        </font>
-                                    </div>
-                                    <div style={{height:'5px'}}></div>
-                                    <div className={styles.t__small_s}>
-                                        <font className={styles.t__small_s}>减少重复性工作花费的时间
-                                        </font>
-                                    </div>
-
-                                    <div className={styles.product__learn_more}>
-                                        <div style={{height:'2em'}}></div>
-                                        <span>
-                                            <font className={styles.smallerbiaoti}>了解更多</font>
-                                        </span>                  
-                                    </div>                
-                                </a>
-                            </div>
-
-
-                            <div className={styles.chuangjian} style={{paddingRight:"0em"}}>
-                                <a href="#jixiaopinggu" className={styles.lianjie}>
-                                    <div>                
-                                    </div>
-                                    <div style={{height:'5em'}}></div>                           
-                                    <div className={styles.t__h3}>
-                                        <font >实时绩效评估
-                                        </font>
-                                    </div>
-                                    <div style={{height:'5px'}}></div>
-                                    <div className={styles.t__small_s}>
-                                        <font >实时了解在线客服团队绩效并提前采取行动
-                                        </font>
-                                    </div>
-
-                                    <div className={styles.product__learn_more}>
-                                        <div style={{height:'2em'}}></div>
-                                        <span>
-                                            <font className={styles.smallerbiaoti}>了解更多</font>
-                                        </span>                  
-                                    </div>
-                                </a>
-                            </div>           
-                        </div>          
-                    </div>
+                    <HoverCard texts={{title: "一个界面", desc:"为在线客服团队配备统一的全渠道界面", link:{href:"#jiemian"}}} />
+                    <HoverCard texts={{title: "多渠道自动化工作流程", desc:"减少重复性工作花费的时间", link:{href:"gongzuoliucheng"}}} />
+                                                  
                 </div>
             </section>
 
@@ -171,6 +77,7 @@ export default () => (
                                 <font>网页、移动端、社交媒体、邮件、电话等多渠道接入客户对话</font>
                             </div>
                         </div>
+
                         <div className={styles.g__c8}>
                             <div className={styles.g__row}>
 
@@ -334,66 +241,6 @@ export default () => (
                 </div>              
             </section>
 
-
-            <section id="jixiaopinggu" className={styles.section}>
-                <div className={styles.container__narrower}>
-                    <hr style={{height:"1px"}}/>
-                </div>
-            </section>
-
-            <section>      
-                <div className={styles.container__narrower}>
-                    <div className={styles.g__row}>
-
-                        <div className={styles.g__c3}>
-                            <h3><font className={styles.huise}>切实可行的绩效评估</font></h3>
-                            <div className={styles.huisesmaller}>
-                                <font>实时了解团队绩效并提前采取行动</font>
-                            </div>
-                        </div>
-                        <div className={styles.g__c8}>
-                            <div className={styles.g__row}>
-
-                                <div className={styles.g__c6}>
-                                    <div className={styles.features__block}>
-                                        <FeatherModal abstract={{title: "响应时间", icon:require("../icon/6.1.13.png"), desc: "统计座席对客户咨询的平均响应时间"}}>
-                                        </FeatherModal>
-                                    </div>
-                                </div>
-
-                                <div className={styles.g__c6}>
-                                    <div className={styles.features__block}>
-                                        <FeatherModal abstract={{title: "客服工作量", icon:require("../icon/6.1.15.png"), desc: "统计客服组或客服在一段时间的工作量"}}>
-                                        </FeatherModal>
-                                    </div>
-                                </div>
-
-                                <div className={styles.g__c6}>
-                                    <div className={styles.features__block}>
-                                        <FeatherModal abstract={{title: "商机数", icon:require("../icon/6.1.16.png"), desc: "统计一段时间生成的商机数"}}>
-                                        </FeatherModal>
-                                    </div>
-                                </div>
-
-
-                                <div className={styles.g__c6}>
-                                    <div className={styles.features__block}>
-                                        <FeatherModal abstract={{title: "访客转化率", icon:require("../icon/6.1.17.png"), desc: "网站访客转化为付费客户的比例和ROI"}}>
-                                        </FeatherModal>
-                                    </div>
-                                </div>   
-
-                                <div className={styles.g__c6}>
-                                    <div className={styles.features__block}>
-                                        <FeatherModal abstract={{title: "客户满意度", icon:require("../icon/6.1.18.png"), desc: "满意客户占受访客户比率"}}>
-                                        </FeatherModal>
-                                    </div>
-                                </div>              
-                            </div>            
-                        </div>          
-                    </div>        
-                </div>              
-            </section> 
         </div>
 	</Layout>
 );

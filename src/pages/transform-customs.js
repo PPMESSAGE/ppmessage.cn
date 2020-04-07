@@ -53,119 +53,47 @@ export default () => {
                                 <EnterYourMobile size="middle"/> 
                             </div>
                             <div style={{height:"10px"}}></div>
-                            <di style={{display:"flex", flexDirection:"row", justifyContent:"center"}}>
+                            <div style={{display:"flex", flexDirection:"row", justifyContent:"center"}}>
                                 <Free />
-                            </di>
+                            </div>
                         </div>        
                     </div>
                 </div>
 
-                <div style={{height:'200px'}}></div>
-
-                <section className={styles.section_transform1}>
+                <section style={{paddingTop: "120px"}}>
                     <div className={styles.container}>
-                        <div className={styles.g__row}>
+                        <div style={{
+                            display: "flex",
+                            flex: "0 1 auto",
+                            flexWrap: "wrap",
+                            flexDirection: "row",
+                            alignItems: "center",
+                            width: "100%",
+                            justifyContent: "center"
+                        }}>
 
-                            <ImageHoverCard texts={{title:"获取",desc:"通过主动对话、应用内消息互动、邮件营销、短信营销、微信 营销和智能外呼获取更多商机",image:"155.png", link: {href:"#huode"} }}/>
+                            <ImageHoverCard texts={{title:"获取",desc:"通过主动对话、消息互动、微信营销和智能外呼获取更多商机",image:"155.png", link: {href:"#huode"} }}/>
 
-                            <div className={styles.chuangjian_tranform1}>
-                                <a href="#huode" className={styles.lianjie}>
-                                    <div className={styles.product__breakdown__image}>
-                                        <img alt="通过主动对话、应用内消息互动、邮件营销、短信营销、微信 营销和智能外呼获取更多商机" src={require("../images/155.png")} width="91px" />
-                                    </div>
-                                    <div style={{height:"10px"}}></div>
-                                    <div className={styles.t__h3}>
-                                        获取
-                                    </div>
-                                    <div className={styles.t__small_s}>
-                                        通过主动对话、应用内消息互动、邮件营销、短信营销、微信 营销和智能外呼获取更多商机
-                                    </div>
-                                    <div className={styles.product__learn_more} style={{margin:"80px"}}>
-                                        <span className={styles.smallerbiaoti}>了解更多</span>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div className={styles.chuangjian_tranform2}>
-                                <a href="#xiushi" className={styles.lianjie}>
-                                    <div className={styles.product__breakdown__image}>
-                                        <img alt="通过机器学习自动评估商机质量，并将合适的商机转给合适的销售人员，安排销售会议或与您的CRM系统同步信息" src={require("../images/156.png")} width="91px" /></div>
-                                        <div style={{height:"10px"}}></div>
-                                        <div className={styles.t__h3}>
-                                            <font>评价</font>
-                                        </div>
-                                        <div className={styles.t__small_s}>
-                                            <font>通过机器学习自动评估商机质量，并将合适的商机转给合适的销售人员，安排销售会议或与您的CRM系统同步信息
-                                            </font>
-                                        </div>
-                                        <div className={styles.product__learn_more} style={{margin:"80px"}}>
-                                            <span>
-                                                <font className={styles.smallerbiaoti}>了解更多</font>
-                                            </span>                  
-                                        </div>                
-                                </a>
-                            </div>
+                            <ImageHoverCard texts={{title:"评价",desc:"通过自动评估商机质量，并将合适的商机转给合适的销售人员",image:"156.png", link: {href:"#xiushi"} }}/>
                             
-
-                            <div className={styles.chuangjian_tranform3}>
-                                <a href="#duihuan" className={styles.lianjie}>
-                                    <div className={styles.product__breakdown__image}>
-                                        <img alt="通过实时聊天和消息互动完成商机转化" src={require("../images/157.png")} width="91px" /></div>
-                                        <div style={{height:"10px"}}></div>
-                                        <div className={styles.t__h3}>
-                                            <font>转化</font>
-                                        </div>
-                                        <div className={styles.t__small_s}>
-                                            <font>通过实时聊天和消息互动完成商机转化
-                                            </font>
-                                        </div>
-                                        <div className={styles.product__learn_more} style={{margin:"80px"}}>
-                                            <span>
-                                                <font className={styles.smallerbiaoti}>了解更多</font>
-                                            </span>                  
-                                        </div>                
-                                </a>
-                            </div>
-                            <div className={styles.chuangjian_tranform4}>
-                                <a href="#celiang" className={styles.lianjie}>
-                                    <div className={styles.product__breakdown__image}>
-                                        <img alt="实时了解商机转化数量，商机来源等信息，评估营销质量" src={require("../images/158.png")} width="91px" /></div>
-                                        <div style={{height:"10px"}}></div>
-                                        <div className={styles.t__h3}>
-                                            <font>测量</font>
-                                        </div>
-                                        <div className={styles.t__small_s}>
-                                            <font>实时了解商机转化数量，商机来源等信息，评估营销质量</font>
-                                        </div>
-                                        <section id="huode"></section>
-                                        <div className={styles.product__learn_more} style={{margin:"80px"}}>
-                                            <span>
-                                                <font className={styles.smallerbiaoti}>了解更多</font>
-                                            </span>                  
-                                        </div>                
-                                </a>
-                            </div>
+                            <ImageHoverCard texts={{title:"转化",desc:"通过实时聊天和消息互动完成商机转化",image:"157.png", link: {href:"#duihuan"} }}/>
                             
                         </div>                        
                     </div>
                 </section>
 
-                <section>
+                <section style={{paddingTop: "120px"}}>
                     
                     <div className={styles.container_z}>
                         <div className={styles.g__row}>
                             <div className={styles.g__c6}>
                                 <div style={{height:"20px"}}></div>
                                 <h3 className={styles.t__h2}>
-                                    <font>
-                                        通过定制化的自动消息转化更多网页访客
-                                    </font>
+                                    通过定制化的自动消息转化更多网页访客
                                 </h3>
                                 <div style={{height:"10px"}}></div>
                                 <div className={styles.max__600}>
-                                    <font>通过访客在线时与其实时互动而不是冗长的表单转化客户
-
-                                    </font>
+                                    通过访客在线时与其实时互动而不是冗长的表单转化客户
                                 </div>
                             </div>
                             
