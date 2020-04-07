@@ -28,12 +28,8 @@ export default () => (
                             </h3>
                             <div style={{height:"20px"}}>            
                             </div>
-                            <div>
-                                <div className={styles.f__center}>
-                                    <div className={styles.btn_s}> 
-                                        <PPButton />  
-                                    </div>
-                                </div>                            
+                            <div className={styles.ppbutton}>
+                                <PPButton />
                             </div>
                         </div>
                     </div>

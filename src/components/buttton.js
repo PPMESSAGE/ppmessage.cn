@@ -2,7 +2,7 @@ import React from "react";
 
 
 class PPButton extends React.Component{
-    clickButton(){
+    clickButton() {
         if (window.PP.isOpen()) {
             window.PP.close()
         } else {
