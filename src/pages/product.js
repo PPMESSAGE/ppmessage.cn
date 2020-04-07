@@ -51,13 +51,13 @@ export default () => (
 
 
             <section>
-                <div className={styles.container__narrower}>
+                <div className={styles.container__narrower} style={{display:"flex", flexDirection:"row"}}>
                     
                     <HoverCard texts={{title: "多渠道在线客服", desc:"网页、移动端、社交媒体、电话、邮件等多渠道接入客户对话", link:{href:"#qudao"}}} />
 
                     <HoverCard texts={{title: "一个界面", desc:"为在线客服团队配备统一的全渠道界面", link:{href:"#jiemian"}}} />
                     <HoverCard texts={{title: "多渠道自动化工作流程", desc:"减少重复性工作花费的时间", link:{href:"gongzuoliucheng"}}} />
-                                                  
+                    
                 </div>
             </section>
 

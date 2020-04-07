@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 import Layout from "./layout";
 import PPKeyFeatures from "../components/ppkeyfeatures";
 import Free from "../components/free_trial";
+import HoverCard from "../components/hovercard";
 
 export default () =>{
     let _features = [
@@ -97,105 +98,16 @@ return(
 
             
 
-            <section className={styles.section_o__no_bottom}>
-                <div className={styles.container}>
-                    <div className={styles.g__row}>
+            <section>
+                <div className={styles.container__narrower} style={{display:"flex", flexDirection:"row"}}>
+                    
+                    <HoverCard texts={{title: "全球化", desc:"跨时区、多语言，保障全球客服24小时在线", link:{href:"#quanqiuhua"}}} />
 
-                        <div className={styles.cloud_call_center}>
-
-                            <div className={styles.chuangjian} style={{margin:"22px",paddingRight:"0em"}}>
-                                <a href="#quanqiuhua" className={styles.lianjie}>
-                                    <div className={styles.t__h3}>
-                                        <font>全球化</font>
-                                    </div>
-                                    <div className={styles.t__small_s1}>
-                                        <font>跨地域、跨时区、多语言，支持语音通话跨地域转接，保障全球客服24小时在线</font>
-                                    </div>
-                                    <div className={styles.product__learn_more} style={{margin:"80px"}}>
-                                        <span >
-                                            <font className={styles.smallerbiaoti}>了解更多</font>
-                                        </span>                  
-                                    </div>                
-                                </a>
-                            </div>
-
-                            <div className={styles.chuangjian} style={{margin:"22px 35px",paddingRight:"0em"}}>
-                                <a href="#quanqudao" className={styles.lianjie}>
-                                    <div style={{height:"10px"}}></div>
-                                    <div className={styles.t__h3}>
-                                        <font>全渠道</font>
-                                    </div>
-                                    <div className={styles.t__small_s1}>
-                                        <font>电话、网页、应用、邮件、社交媒体通过一个界面统一管理，
-                                            客户通过各个渠道的访问信息统一检索</font>
-                                    </div>
-                                    <div className={styles.product__learn_more}  style={{margin:"80px"}}>
-                                        <span>
-                                            <font className={styles.smallerbiaoti}>了解更多</font>
-                                        </span>                  
-                                    </div>                
-                                </a>
-                            </div>
-                            <div className={styles.chuangjian} style={{margin:"22px 50px",paddingRight:"0em"}}>
-                                <a href="#kedingzhi" className={styles.lianjie}>
-                                    <div className={styles.t__h3}>
-                                        <font>可定制</font>
-                                    </div>
-                                    <div className={styles.t__small_s1}>
-                                        <font>电话与其他渠道消息通过统一流程集中处理，不仅仅是IVR
-                                            通过流程及开发接口快速实现企业业务定制
-                                        </font>
-                                    </div>
-                                    <div className={styles.product__learn_more}  style={{margin:"80px"}}>
-                                        <span>
-                                            <font className={styles.smallerbiaoti}>了解更多</font>
-                                        </span>                  
-                                    </div>                
-                                </a>
-                            </div>
-
-
-                            <div className={styles.chuangjian} style={{margin:"22px 50px",paddingRight:"0em"}}>
-                                <a href="#darongliang" className={styles.lianjie}>
-                                    <div className={styles.t__h3}>
-                                        <font>大容量</font>
-                                    </div>
-                                    <div className={styles.t__small_s1}>
-                                        <font>支持万级并发呼叫
-                                            系统可用性99.99%
-                                            海量录音及实时识别
-                                        </font>
-                                    </div>
-                                    <div className={styles.product__learn_more}  style={{margin:"80px"}}>
-                                        <span>
-                                            <font className={styles.smallerbiaoti}>了解更多</font>
-                                        </span>                  
-                                    </div>                
-                                </a>
-                            </div>
-                            <div className={styles.chuangjian} style={{margin:"22px",paddingRight:"0em"}}>
-                                <a href="#rengongzhineng" className={styles.lianjie}>
-                                    <div className={styles.t__h3}>
-                                        <font>人工智能</font>
-                                    </div>
-                                    <div className={styles.t__small_s1}>
-                                        <font>自动语音识别
-                                            多轮对话
-                                            智能质检
-                                        </font>
-                                    </div>
-                                    <div className={styles.product__learn_more}  style={{margin:"80px"}}>
-                                        <span>
-                                            <font className={styles.smallerbiaoti}>了解更多</font>
-                                        </span>                  
-                                    </div>                
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <HoverCard texts={{title: "全渠道", desc:"电话、网页、应用、邮件、社交媒体通过一个界面统一管理", link:{href:"#quanqudao"}}} />
+                    <HoverCard texts={{title: "可定制", desc:"电话与其他渠道消息通过统一流程集中处理，通过流程及开发接口快速实现企业业务定制", link:{href:"kedingzhi"}}} />
+                    
                 </div>
             </section>
-
 
             <section >
                 <div className={styles.container_z}>

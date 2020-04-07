@@ -6,15 +6,13 @@ class PPButton extends React.Component{
         if (window.PP.isOpen()) {
             window.PP.close()
         } else {
-            window.PP.show()
+            window.PP.open()
         }
     }
     render() {
         return (
             <div onClick={this.clickButton}> 
-                <font>
-                    联系客服
-                </font>
+                联系客服
             </div>
         )
     }
