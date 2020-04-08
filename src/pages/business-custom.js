@@ -14,7 +14,6 @@ export default () => (
             <meta name="description" content="PPMESSAGE智能客服系统独有的流程生成器，工具丰富的APP商店，功能强大的API接口，自定义字段和视图，可按客户要求快速生成符合客户业务特点的定制化客服解决方案" />
         </Helmet>
         <div className={styles.heiti}>
-            <div style={{height:`72px`}}></div>
 
             <PageHeader texts={{
                 title: "业务定制",

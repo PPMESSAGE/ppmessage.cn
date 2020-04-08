@@ -14,7 +14,6 @@ export default () => (
             <meta name="description" content="PPMESSAGE新一代全渠道在线客服系统整合行业人工智能＋语音大数据＋运营商等资源，利用ASR、TTS、NLP等技术，通过业内独有的流程机制解决全球业务的客服痛点。可实现事件营销、意向筛选、定向销售、问卷调查、产品续费、定向催收、会员关怀、身份认证、产品推荐等多种业务功能，极大降低企业成本。" />           
         </Helmet>
         <div className={styles.heiti}>
-            <div style={{height:'144px'}}></div>
 
             <PageHeader texts={{
                 title: "智能语音机器人",

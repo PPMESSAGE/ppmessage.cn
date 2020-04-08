@@ -139,8 +139,6 @@ export default () =>{
             </Helmet>
             
             <div className={styles.heiti}>
-                <div style={{height:'72px'}}></div>
-
                 <PageHeader texts={{
                     title: "更好的客户关系从对话开始",
                     image: "index.jpeg",

@@ -12,9 +12,6 @@ class PageHeader extends React.Component {
         super(props);
     }
     
-    componentWillUnmount() {       
-    }
-
     componentDidMount() {
     }
     
@@ -22,7 +19,9 @@ class PageHeader extends React.Component {
         const {texts} = this.props;
         
         return (
-            <div className={styles.container__narrower}>
+            <div className={styles.container__narrower} style={{
+                paddingTop: "72px"
+            }}>
                 <div className={styles.g__row}>
                     
                     <div className={styles.g__c6_index}>
