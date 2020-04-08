@@ -23,13 +23,13 @@ export default () => (
                     <div className={styles.g__c6}>
                         <h1>智能客服</h1>
                         <div className={styles.sp__5}>
-                            <h2 style={{margin:'5rem 0rem 0rem 0rem'}}>批量管理与访客和客户的在线对话
+                            <h2 style={{margin:'5rem 0rem 0rem 0rem'}}>批量管理访客的在线对话
                             </h2>
                             <div style={{height:"10px"}}>
                             </div>
                             <h3 style={{color:'#888'}}>
                                 <font className={styles.biaoti}>
-                                    在您的网站，移动应用，电子邮件和社交网络中与访客和客户在线对话
+                                    在您的网站，应用，微信中与访客在线对话
                                 </font>
                             </h3>
                             <div style={{height:"20px"}}>            
@@ -53,10 +53,10 @@ export default () => (
             <section>
                 <div className={styles.container__narrower} style={{display:"flex", flexDirection:"row"}}>
                     
-                    <HoverCard texts={{title: "多渠道在线客服", desc:"网页、移动端、社交媒体、电话、邮件等多渠道接入客户对话", link:{href:"#qudao"}}} />
+                    <HoverCard texts={{title: "多渠道在线客服", desc:"网页、移动端、微信、电话、邮件等多渠道接入客户对话", link:{href:"#qudao"}}} />
 
-                    <HoverCard texts={{title: "一个界面", desc:"为在线客服团队配备统一的全渠道界面", link:{href:"#jiemian"}}} />
-                    <HoverCard texts={{title: "多渠道自动化工作流程", desc:"减少重复性工作花费的时间", link:{href:"gongzuoliucheng"}}} />
+                    <HoverCard texts={{title: "一个界面", desc:"为在线客服配备统一的全渠道界面，一个界面处理所有渠道消息", link:{href:"#jiemian"}}} />
+                    <HoverCard texts={{title: "多渠道自动化工作流程", desc:"减少重复性工作花费的时间", link:{href:"#gongzuoliucheng"}}} />
                     
                 </div>
             </section>
@@ -83,7 +83,7 @@ export default () => (
 
                                 <div className={styles.g__c6}>
                                     <div className={styles.features__block}>
-                                        <FeatherModal abstract={{title: "聊天组件", icon:require("../icon/6.1.1.png"),desc:"与您网站、移动设备和应用内的访客实时文字聊天和语音对话"}}>
+                                        <FeatherModal abstract={{title: "聊天组件", icon:require("../icon/6.1.1.png"),desc:"与您网站、应用访客实时文字聊天和语音对话"}}>
                                         </FeatherModal>
 
                                     </div>
@@ -135,9 +135,9 @@ export default () => (
                     <div className={styles.g__row}>
 
                         <div className={styles.g__c3}>
-                            <h3><font className={styles.huise}>唯一界面</font></h3>
+                            <h3><font className={styles.huise}>一个界面</font></h3>
                             <div className={styles.huisesmaller}>
-                                <font>为团队配备统一的全渠道桌面，提供所有背景信息及相关知识，单一界面管理所有客户互动</font>
+                                为在线客服配备统一的全渠道界面，一个界面处理所有渠道消息
                             </div>
                         </div>
                         <div className={styles.g__c8}>
@@ -145,7 +145,7 @@ export default () => (
 
                                 <div className={styles.g__c6}>
                                     <div className={styles.features__block}>
-                                        <FeatherModal abstract={{title: "消息汇聚", icon:require("../icon/6.1.5.png"), desc: "将网页、移动端、社交媒体、邮件、电话等渠道的会话转入统一座席工作台"}}>
+                                        <FeatherModal abstract={{title: "消息汇聚", icon:require("../icon/6.1.5.png"), desc: "将网页、应用、微信、邮件、电话等渠道的会话转入统一座席工作台"}}>
                                         </FeatherModal>
 
                                     </div>
@@ -200,7 +200,7 @@ export default () => (
                                 <div className={styles.g__c6}>
                                     <div className={styles.features__block}>
 
-                                        <FeatherModal abstract={{title: "会话分配流程", icon:require("../icon/6.1.9.png"), desc: "根据访客的属性和行为将会话根据随机、循环等分配策略分配给对应客服或客服组"}}>
+                                        <FeatherModal abstract={{title: "会话分配流程", icon:require("../icon/6.1.9.png"), desc: "根据访客的行为将会话分配给不同的客服或客服组"}}>
                                         </FeatherModal>
                                         
                                     </div>
@@ -210,7 +210,7 @@ export default () => (
                                     <div className={styles.features__block}>
 
 
-                                        <FeatherModal abstract={{title: "预置话术", icon:require("../icon/6.1.10.png"), desc: "预置回答常见问题的标准答案"}}>
+                                        <FeatherModal abstract={{title: "预置话术", icon:require("../icon/6.1.10.png"), desc: "预置回答常见问题的标准答案，解答快速而且标准化"}}>
                                         </FeatherModal>
                                         
                                     </div>
@@ -219,7 +219,7 @@ export default () => (
                                 <div className={styles.g__c6}>
                                     <div className={styles.features__block}>
 
-                                        <FeatherModal abstract={{title: "智能提示", icon:require("../icon/6.1.11.png"), desc: "根据历史谈话记录智能建议问题答案"}}>
+                                        <FeatherModal abstract={{title: "智能提示", icon:require("../icon/6.1.11.png"), desc: "根据客户问题智能建议在线客服答案"}}>
                                         </FeatherModal>
                                         
                                     </div>

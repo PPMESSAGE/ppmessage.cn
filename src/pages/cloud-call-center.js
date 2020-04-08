@@ -35,23 +35,6 @@ export default () =>{
         },
     ]
 
-    let _features3 = [
-        {
-            title: "可扩展、大容量，性能稳定",
-            desc: "支持万级并发呼叫，系统可用性99.99%；支持海量录音",
-            alt: "支持万级并发呼叫，系统可用性99.99%；支持海量录音",
-            image: require("../images/76.png")
-        },
-    ]
-    let _features4 = [
-        {
-            title: "与人工智能无缝集合",
-            desc: "智能语音交互，实时语音识别，自然语言处理，定制 TTS，定制 ASR，智能质检",
-            alt: "智能语音交互，实时语音识别，自然语言处理，定制 TTS，定制 ASR，智能质检",
-            image: require("../images/77.png")
-        },
-    ]
-
 return(
 	<Layout>
         <Helmet>
@@ -97,52 +80,39 @@ return(
             </div>
 
             
-
             <section>
                 <div className={styles.container__narrower} style={{display:"flex", flexDirection:"row"}}>
                     
-                    <HoverCard texts={{title: "全球化", desc:"跨时区、多语言，保障全球客服24小时在线", link:{href:"#quanqiuhua"}}} />
+                    <HoverCard texts={{title: "全球化", desc:"跨时区、多语言，保障全球客服24小时在线", link:{href:"#global"}}} />
 
-                    <HoverCard texts={{title: "全渠道", desc:"电话、网页、应用、邮件、社交媒体通过一个界面统一管理", link:{href:"#quanqudao"}}} />
-                    <HoverCard texts={{title: "可定制", desc:"电话与其他渠道消息通过统一流程集中处理，通过流程及开发接口快速实现企业业务定制", link:{href:"kedingzhi"}}} />
+                    <HoverCard texts={{title: "全渠道", desc:"电话、网页、应用、邮件、社交媒体通过一个界面统一管理", link:{href:"#full"}}} />
+
+                    <HoverCard texts={{title: "可定制", desc:"电话与其他渠道消息通过统一流程集中处理，通过流程及开发接口快速实现企业业务定制", link:{href:"#custom"}}} />
                     
                 </div>
             </section>
 
-            <section >
+            <section id="global">
                 <div className={styles.container_z}>
                     <PPKeyFeatures rtl="true" features={_features}>
                     </PPKeyFeatures>
                 </div>
             </section>
 
-            <section >
+            <section id="full">
                 <div className={styles.container_z}>
                     <PPKeyFeatures rtl="false" features={_features1}>
                     </PPKeyFeatures>
                 </div>
             </section>
-            <section >
+
+            <section id="custom">
                 <div className={styles.container_z} >
                     <PPKeyFeatures rtl="true" features={_features2}>
                     </PPKeyFeatures>
                 </div>
             </section>
             
-
-            <section >
-                <div className={styles.container_z}>
-                    <PPKeyFeatures rtl="false" features={_features3}>
-                    </PPKeyFeatures>
-                </div>
-            </section>
-
-            <section>
-                <div className={styles.container_z} style={{maxWidth:"1300px"}}>
-                    <PPKeyFeatures rtl="true" features={_features4}>
-                    </PPKeyFeatures>                        
-                </div>                  
-            </section>
         </div>
 	</Layout>
 );
