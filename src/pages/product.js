@@ -6,6 +6,7 @@ import Layout from "./layout";
 import {Helmet} from "react-helmet";
 import Free from "../components/free_trial";
 import HoverCard from "../components/hovercard";
+import PageHeader from "../components/pageheader";
 
 export default () => (
 	<Layout>
@@ -18,37 +19,18 @@ export default () => (
         
         <div className={styles.heiti}>
             <div style={{height:`144px`}}></div>
-            <div className={styles.container__narrower}>
-                <div className={styles.g__row}>
-                    <div className={styles.g__c6}>
-                        <h1>智能客服</h1>
-                        <div className={styles.sp__5}>
-                            <h2 style={{margin:'5rem 0rem 0rem 0rem'}}>批量管理访客的在线对话
-                            </h2>
-                            <div style={{height:"10px"}}>
-                            </div>
-                            <h3 style={{color:'#888'}}>
-                                <font className={styles.biaoti}>
-                                    在您的网站，应用，微信中与访客在线对话
-                                </font>
-                            </h3>
-                            <div style={{height:"20px"}}>            
-                            </div>
-                            <div>
-                                <EnterYourMobile size="middle"/>                            
-                            </div>
-                            <div style={{height:"10px"}}></div>
-                            <Free />
-                        </div>
-                    </div>
-                    <div className={styles.g__c6}>
-                        <div>
-                            <img src={require("../images/162.png")} alt="PPMESSAGE 新一代全渠道智能在线客服系统，以人工智能为基础，为企业提供集在线客服系统、云呼叫中心、工单系统和营销自动化于一体的智能客服解决方案" />
-                        </div>
-                    </div>
-                </div>  
-            </div>
 
+            
+            <PageHeader texts={{
+                title: "智能客服",
+                image: "162.png",
+                desc: {
+                    ps: [
+                        "集中管理访客的在线对话",
+                        "在您的网站，应用，微信中与访客在线对话"
+                    ]
+                },
+            }}/>
 
             <section>
                 <div className={styles.container__narrower} style={{display:"flex", flexDirection:"row"}}>

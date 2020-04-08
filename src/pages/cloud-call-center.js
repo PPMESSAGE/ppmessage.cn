@@ -6,6 +6,7 @@ import Layout from "./layout";
 import PPKeyFeatures from "../components/ppkeyfeatures";
 import Free from "../components/free_trial";
 import HoverCard from "../components/hovercard";
+import PageHeader from "../components/pageheader";
 
 export default () =>{
     let _features = [
@@ -46,39 +47,20 @@ return(
         </Helmet>
         <div className={styles.heiti}>
             <div style={{height:"144px"}}></div>
-            <div className={styles.container__narrower}>
-                <div className={styles.g__row}>
-                    <div className={styles.g__c6}>
-                        <h1>云呼叫中心</h1>
-                        <div className={styles.sp__5}>
-                            <h2 style={{margin:'5rem 0rem 0rem 0rem'}}>全渠道跨国云呼叫中心解决方案
-                            </h2>
-                            <div style={{height:"10px"}}>
-                            </div>
-                            <h3 style={{color:'#888'}}><font className={styles.biaoti}>基于云计算的新一代呼叫中心，支持跨时区、跨地域、多语言分布式组网，真正All-in-One的客户体验与联络中心，系统安全可靠，部署方式灵活
-                            </font>
-                            </h3>
-                            <div style={{height:"20px"}}>            
-                            </div>
-                            <div>
-                                <EnterYourMobile size="middle"/>                            
-                            </div>
-                            <div className={styles.t__small}>
-                                <div className={styles.list__bulletinline}>
-                                    <div style={{height:"10px"}}></div>
-                                    <Free />        
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.g__c6}>
-                        <div>
-                            <img src={require("../images/165.png")} alt="PPMESSAGE全渠道跨国云呼叫中心是基于云计算的新一代呼叫中心解决方案，支持跨时区、跨地域、多语言分布式组网，是真正All-in-One的客户体验与联络中心，系统安全可靠，部署方式灵活" />
-                        </div>
-                    </div>
-                </div>  
-            </div>
 
+            <PageHeader texts={{
+                title: "云呼叫中心",
+                image: "165.png",
+                desc: {
+                    ps: [
+                        "全渠道全球云呼叫中心解决方案",
+                        "基于云计算的新一代呼叫中心",
+                        "支持跨时区、跨地域、多语言分布式组网"
+                    ]
+                }
+            }}/>
+            
+            
             
             <section>
                 <div className={styles.container__narrower} style={{display:"flex", flexDirection:"row"}}>

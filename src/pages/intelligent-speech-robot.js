@@ -4,6 +4,7 @@ import EnterYourMobile from "../components/enteryourmobile";
 import {Helmet} from "react-helmet";
 import Layout from "./layout";
 import Free from "../components/free_trial";
+import PageHeader from "../components/pageheader";
 
 export default () => (
 	<Layout>
@@ -14,36 +15,19 @@ export default () => (
         </Helmet>
         <div className={styles.heiti}>
             <div style={{height:'144px'}}></div>
-            <div className={styles.container__narrower}>
-                <div className={styles.g__row}>
-                    <div className={styles.g__c6}>
-                        <h1>智能语音机器人</h1>
-                        <div className={styles.sp__5}>
-                            <h2 style={{margin:'5rem 0rem 0rem 0rem'}}>
-                                全面的机器人语音交互系统
-                            </h2>
-                            <div style={{height:"10px"}}>
-                            </div>
-                            <h3 style={{color:'#888'}}><font className={styles.biaoti}>
-                                整合行业人工智能＋语音大数据＋运营商等资源，利用语音识别(ASR)、语音合成(TTS)、语义理解(NLP)等技术，通过业内独有的流程机制解决全球业务的客服痛点。可实现事件营销、意向筛选、定向销售、问卷调查、产品续费、定向催收、会员关怀、身份认证、产品推荐等多种业务功能，极大降低企业成本。
-                            </font>
-                            </h3>
-                            <div style={{height:"20px"}}>            
-                            </div>
-                            <div>
-                                <EnterYourMobile size="middle"/>                            
-                            </div>
-                            <div style={{height:"10px"}}></div>
-                            <Free />
-                        </div>
-                    </div>
-                    <div className={styles.g__c6}>
-                        <div>
-                            <img src={require("../images/168.png")} alt="整合行业人工智能＋语音大数据＋运营商等资源，利用语音识别(ASR)、语音合成(TTS)、语义理解(NLP)等技术，通过业内独有的流程机制解决全球业务的客服痛点。可实现事件营销、意向筛选、定向销售、问卷调查、产品续费、定向催收、会员关怀、身份认证、产品推荐等多种业务功能，极大降低企业成本" />
-                        </div>
-                    </div>
-                </div>  
-            </div>
+
+            <PageHeader texts={{
+                title: "智能语音机器人",
+                image: "168.png",
+                desc: {
+                    ps: [
+                        "全面的机器人语音交互系统",
+                        "整合行业人工智能＋语音大数据＋运营商等资源",
+                        "利用语音识别(ASR)、语音合成(TTS)、语义理解(NLP)等技术",
+                        "事件营销、意向筛选、问卷调查、产品续费、定向催收"
+                    ]
+                }
+            }}/>
 
             <div className={styles.container}>
                 <div className={styles.bg__light} style={{backgroundColor:"white"}}>                                

@@ -267,7 +267,8 @@ class NavHeader extends React.Component {
                                     </div>
                                 </Hamburger>
                             </div>
-                            <a className="navheader-link">
+                            
+                            <div className="navheader-link">
                                 <NavDropdown title="产品">
                                     <div style={{
                                         display: "flex",
@@ -289,7 +290,7 @@ class NavHeader extends React.Component {
                                                 云呼叫中心
                                             </div>
                                             <div className="navheader-dropdown-item-desc">
-                                                支持跨时区、跨地域、多语言分布式组网，真正All-in-One的客户体验与联络中心
+                                                支持跨时区、跨地域、多语言分布式组网，一体化客户体验与联络中心
                                             </div>
                                         </a>
 
@@ -323,9 +324,9 @@ class NavHeader extends React.Component {
 
                                 </NavDropdown>
 
-                            </a>
+                            </div>
 
-                            <a className="navheader-link">
+                            <div className="navheader-link">
 
                                 <NavDropdown title="场景">
                                     <div style={{
@@ -365,7 +366,7 @@ class NavHeader extends React.Component {
                                     </div>
                                 </NavDropdown>
 
-                            </a>
+                            </div>
 
                             
                             <a href="/pricing" className="navheader-link">
@@ -395,7 +396,7 @@ class NavHeader extends React.Component {
                 }}
             </Location>
         )
-}
+    }
 }
 
 

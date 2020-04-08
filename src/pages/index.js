@@ -7,6 +7,7 @@ import Layout from "./layout";
 import {Helmet} from "react-helmet";
 import Free from "../components/free_trial";
 import HoverCard from "../components/hovercard";
+import PageHeader from "../components/pageheader";
 
 export default () =>{
 
@@ -139,36 +140,18 @@ export default () =>{
             
             <div className={styles.heiti}>
                 <div style={{height:'72px'}}></div>
-                <div className={styles.container__narrower}>
-                    <div className={styles.g__row}>
-                        <div className={styles.g__c6_index}>
-                            <div style={{
-                                paddingTop: "96px"
-                            }}>
-                                <h1 style={{fontSize:"36px",fontWeight:"400"}}>
-                                    更好的客户关系从对话开始
-                                </h1>
-                                <h2 style={{paddingBottom:"30px", paddingTop: "10px", fontSize:"20px",color:'#222',fontWeight:"300",lineHeight:"28px"}}>
-                                    <p> 打通网站、APP、微信、微博、邮件等渠道 </p>
-                                    <p> 智能客服全面提升工作效率，提高咨询转化率 </p>
-                                    <p> 全方位销售、营销和在线客服，打造卓越客户体验 </p>
-                                </h2>
-                                <EnterYourMobile size="middle" />
-                                <div style={{height:"10px"}}>            
-                                </div>
-                                <Free />
-                            </div>
-                        </div>
-                        <div className={styles.g__c6}>
-                            <div>
-                                <img style={{maxWidth:"100%"}} src={require("../images/index.jpeg")}
-                                     alt="打通网站、APP、微信、微博、邮件等渠道，
-                                智能客服全面提升工作效率，提高咨询转化率，
-                                全方位销售、营销和在线客服，打造卓越客户体验，促进企业成长" />
-                            </div>
-                        </div>
-                    </div>  
-                </div>
+
+                <PageHeader texts={{
+                    title: "更好的客户关系从对话开始",
+                    image: "index.jpeg",
+                    desc: {
+                        ps: [
+                            "打通网站、APP、微信、微博、邮件等渠道",
+                            "智能客服全面提升工作效率，提高咨询转化率",
+                            "全方位销售、营销和在线客服，打造卓越客户体验"
+                        ]
+                    }
+                }} />
 
                 <section>
                     <div className={styles.index_200px_s}></div>

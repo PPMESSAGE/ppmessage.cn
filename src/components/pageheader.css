@@ -1,0 +1,14 @@
+
+.pageheader-title {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.pageheader-desc {
+    padding-bottom: 30px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: #222;
+    font-weight: 300;
+    line-weight: 28px;
+}

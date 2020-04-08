@@ -37,7 +37,7 @@ class NavDropdown extends React.Component {
             </span>
 
             <span className="dropdown-chevron">
-                <svg focusable="false" style={{display:"block"}} width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l4 4 4-4" stroke="#000" strokeWidth="2" stroke-linecap="round" strokeLinejoin="round"></path></svg>
+                <svg focusable="false" style={{display:"block"}} width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l4 4 4-4" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg>
             </span>
             
             <div className="dropdown"

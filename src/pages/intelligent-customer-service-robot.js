@@ -4,6 +4,7 @@ import EnterYourMobile from "../components/enteryourmobile";
 import {Helmet} from "react-helmet";
 import Layout from "./layout";
 import Free from "../components/free_trial";
+import PageHeader from "../components/pageheader";
 
 export default () => (
 
@@ -16,37 +17,19 @@ export default () => (
         </Helmet>
         <div className={styles.heiti}>
             <div style={{height:"144px"}}></div>
-            <div className={styles.container__narrower}>
-                <div className={styles.g__row}>
-                    <div className={styles.g__c6}>
-                        <h1>智能客服机器人</h1>
-                        <div className={styles.sp__5}>
-                            <h2 style={{margin:'5rem 0rem 0rem 0rem'}}>
-                                人机融合，助力客户服务创新升级
-                            </h2>
-                            <div style={{height:"10px"}}>
-                            </div>
-                            <h3 style={{color:'#888'}}>
-                                <font className={styles.biaoti}>
-                                    提供24/7即时解决方案，通过自动解决常见问题提高客户满意度，让您的客服团队可以专注于需要人工处理的复杂对话
-                                </font>
-                            </h3>
-                            <div style={{height:"20px"}}>            
-                            </div>
-                            <div>
-                                <EnterYourMobile size="middle"/>                            
-                            </div>
-                            <div style={{height:"10px"}}></div>
-                            <Free />
-                        </div>
-                    </div>
-                    <div className={styles.g__c6}>
-                        <div>
-                            <img src={require("../images/167.png")} alt="提供24/7即时解决方案，通过自动解决常见问题提高客户满意度，让您的客服团队可以专注于需要人工处理的复杂对话" />
-                        </div>
-                    </div>
-                </div>  
-            </div>
+
+            <PageHeader texts={{
+                title: "智能客服机器人",
+                image: "167.png",
+                desc: {
+                    ps: [
+                        "人机融合，助力客户服务创新升级",
+                        "提供24/7即时解决方案，自动解决常见问题",
+                        "让客服可以专注于复杂对话，提升客户满意度"
+                    ]
+                }
+            }}/>
+
             <div className={styles.detail_new}>
                 <div className={styles.detail_new_s}>
                     <h2 className={styles.h2_s}>
