@@ -73,7 +73,7 @@ return(
             </section>
 
             <section id="global">
-                <div className={styles.container_z}>
+                <div className={styles.container_z} style={{paddingTop: "70px"}}>
                     <PPKeyFeatures rtl="true" features={_features}>
                     </PPKeyFeatures>
                 </div>

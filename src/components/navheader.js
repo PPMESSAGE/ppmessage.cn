@@ -81,12 +81,6 @@ class NavHeader extends React.Component {
                                                 </div>
                                             </a>
                                             <div style={{height:"10px"}}></div>
-                                            <a href="/intelligent-speech-robot" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                    智能语音机器人
-                                                </div>
-                                            </a>
-                                            <div style={{height:"10px"}}></div>
                                             <a href="/business-custom" className={styles.f__no_und_aways}>
                                                 <div className={styles.f__medium}>
                                                     业务定制
@@ -300,15 +294,6 @@ class NavHeader extends React.Component {
                                             </div>
                                             <div className="navheader-dropdown-item-desc">
                                                 自主学习、人机无缝协作，提高客服满意度
-                                            </div>
-                                        </a>
-
-                                        <a href="/intelligent-speech-robot" className={styles.f__no_und_aways}>
-                                            <div className="navheader-dropdown-item-title">
-                                                智能语音机器人
-                                            </div>
-                                            <div className="navheader-dropdown-item-desc">
-                                                基于智能语音交互的人机融合平台，替代人工销售，延伸售后服务
                                             </div>
                                         </a>
 

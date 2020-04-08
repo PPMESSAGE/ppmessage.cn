@@ -65,7 +65,7 @@ class KeyFeatures extends React.Component {
             let _feature_mobile_list = this.props.features.map((feature, i)=> {
                 return (
                     <div key={i} value={i}>
-                        <img src={feature.image} alt={feature.alt||feature.desc} />
+                        <img style={{maxWidth:"518px"}} src={feature.image} alt={feature.alt||feature.desc} />
                         <div className="feature-title">{feature.title}</div>
                         <div className="feature-desc">{feature.desc}</div>
                     </div>

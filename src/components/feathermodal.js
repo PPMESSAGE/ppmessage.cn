@@ -46,7 +46,7 @@ class FeatherModal extends React.Component {
                  onClick={(e)=>{this.setState({is_clicked:true})}}>
                 <div className="feather-modal-abstract">
                     <div>
-                        <img width="30px"
+                        <img style={{width: "32px"}}
                              src={this.props.abstract.icon}
                              alt={this.props.abstract.alt || this.props.abstract.desc} />
                     </div>

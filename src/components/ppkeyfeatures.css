@@ -76,11 +76,15 @@
         text-align:center;
     }
 }
-    .feature-image_q {
-        display:block;
-    }
+.feature-image_q {
+    display:block;
+}
 
 .feature-image_q.active {
     display: block;
+}
+
+.feature-image_q img {
+    max-width: 420px;
 }
 
