@@ -49,7 +49,8 @@ export default () => (
             </section>
 
             <section>      
-                <div className={styles.container__narrower} style={{display:"flex", flexDirection:"row"}}>
+                <div className={styles.container__narrower}
+                     style={{display:"flex", flexDirection:"row"}}>
                     
                     <div style={{maxWidth:"300px"}}>
                         <h1 className="pageheader-title">多渠道智能客服</h1>

@@ -92,11 +92,6 @@ class Footer extends React.Component {
                                                      </a>
                                                  </div>
                                                  
-                                                 <div className={styles.footer__link}>
-                                                     <a href="/intelligent-speech-robot" className={styles.lianjie}>
-                                                         <font>智能语音机器人</font>
-                                                     </a>
-                                                 </div>
                                                  
                                                  <div className={styles.footer__link}>
                                                      <a href="/business-custom" className={styles.lianjie}>
