@@ -37,7 +37,7 @@ export default () => (
                     <HoverCard texts={{title: "多渠道在线客服", desc:"网页、移动端、微信、电话、邮件等多渠道接入客户对话", link:{href:"#qudao"}}} />
 
                     <HoverCard texts={{title: "一个界面", desc:"为在线客服配备统一的全渠道界面，一个界面处理所有渠道消息", link:{href:"#jiemian"}}} />
-                    <HoverCard texts={{title: "多渠道自动化工作流程", desc:"减少重复性工作花费的时间，提升客服人员工作效率", link:{href:"#gongzuoliucheng"}}} />
+                    <HoverCard texts={{title: "自动化工作流程", desc:"减少重复性工作花费的时间，提升客服人员工作效率", link:{href:"#gongzuoliucheng"}}} />
                     
                 </div>
             </section>
@@ -50,7 +50,13 @@ export default () => (
 
             <section>      
                 <div className={styles.container__narrower}
-                     style={{display:"flex", flexDirection:"row"}}>
+                     style={{
+                         paddingLeft: "40px",
+                         paddingRight: "40px",
+
+                         display:"flex",
+                         flexDirection:"row"
+                     }}>
                     
                     <div style={{maxWidth:"300px"}}>
                         <h1 className="pageheader-title">多渠道智能客服</h1>
@@ -110,7 +116,12 @@ export default () => (
             </section>
 
             <section>      
-                <div className={styles.container__narrower} style={{display:"flex", flexDirection:"row"}}>
+                <div className={styles.container__narrower} style={{
+                    paddingLeft: "40px",
+                    paddingRight: "40px",
+                    display:"flex",
+                    flexDirection:"row"
+                }}>
 
                     <div style={{maxWidth:"300px"}}>
                         <h1 className="pageheader-title">一个界面</h1>
@@ -164,7 +175,11 @@ export default () => (
             </section>
 
             <section>      
-                <div className={styles.container__narrower} style={{display:"flex", flexDirection:"row"}}>
+                <div className={styles.container__narrower} style={{
+                    paddingLeft: "40px",
+                    paddingRight: "40px",
+                    display:"flex", flexDirection:"row"
+                }}>
 
                     <div style={{maxWidth:"300px"}}>
                         <h1 className="pageheader-title">自动化工作流程</h1>

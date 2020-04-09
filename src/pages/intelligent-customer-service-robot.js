@@ -93,12 +93,14 @@ export default () => (
                                 </b>
                             </h6>
                             <ul className={styles.robot_ul}>
-                                <li className={styles.active_li}>                                                 完成客户信息查询／采集
+                                <li className={styles.active_li}>
+                                    完成客户信息查询／采集
                                     <div className={styles.detail_right}>
                                         提取企业业务动态知识库信息，提供基于客户身份或其他企业自定义核心要素的查询反馈、信息采集、营销推荐
                                     </div>
                                 </li>
-                                <li className={styles.active_li}>                                                 业务执行操作
+                                <li className={styles.active_li}>
+                                    业务执行操作
                                     <div className={styles.detail_right}>
                                         全面覆盖咨询、推荐、查询等各类任务指令场景，在自然会话中跨场景完成任务，根据业务需求提供针对性的解决方案
                                     </div>
