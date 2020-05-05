@@ -15,7 +15,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    background: white;
+    background: #eee;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     position:fixed;      
@@ -36,11 +36,72 @@
     padding-right:25px;
     padding-left:25px;
     padding-top:28px;
+    font-family:"Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
 }
 
 .navheader-enter-mobile .input-row button.small {
     font-size: 16px;
     font-weight: 600;
+}
+
+.navheader-logo {
+    display: inline-block;
+    outline: none;
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+    line-height: 1;
+}
+
+.navheader-center {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    padding-left: 0px;
+    padding-right: 24px;
+    max-width: 1404px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navheader-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navheader-menu {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 15px;
+}
+
+.navheader-flex-space {
+    flex:1;
+}
+
+.navheader-signin-button {
+    font-family:"Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 700;
+    color: rgb(52,98,223);    
+}
+
+.navheader-office-phone {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(52,98,223);
 }
 
 .navheader-dropdown-item-title {
@@ -55,6 +116,13 @@
     padding-bottom: 20px;
 }
 
+.navheader-hamburger-container {
+    display: "flex";
+    flex: "0 1 auto";
+    flex-wrap: "wrap";
+    flex-direction: "row";
+}
+
 @media screen and (max-width:960px){
     .navheader-enter-mobile {
         display: none;
@@ -62,5 +130,22 @@
 
     .navheader-link {
         display:none;
+    }
+
+    .navheader-actions {
+        display: none;
+    }
+
+    .navheader-flex-space {
+        display: none;
+    }
+
+    .navheader-center {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .navheader-menu {
+        margin-left: auto;
     }
 }

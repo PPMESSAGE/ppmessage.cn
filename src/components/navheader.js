@@ -44,31 +44,33 @@ class NavHeader extends React.Component {
         let _header = (
             <div className={styles.heiti} style={{"position": "relative"}}>                        
                 <div className={_navClass}>
-                    <div className={styles.container}>
-                        <a href="/" className={styles.brand__logo} >
+                    <div className="navheader-center">
+
+                        <a href="/" className="navheader-logo" >
                             <img src={require("../images/ppmessage-logo-black.png")} alt="PPMESSAGE-新一代全渠道智能在线客服系统_网站客服系统"/>
                         </a> 
-                        <div className={styles.nav__content}>
+
+                        <div className="navheader-menu">
                             <div className={styles.Hamburger_div}>
                                 <Hamburger>
-                                    <div style={{
-                                        display: "flex",
-                                        flex: "0 1 auto",
-                                        flexWrap: "wrap",
-                                        flexDirection: "row"
-                                    }}>
+                                    <div className="navheader-hamburger-container">
                                         <div className={styles.g__c7_s}>
+                                            
                                             <div className={styles.t__h4}>
                                                 产品
                                             </div>
                                             <div className={styles.hr__grey}></div>
+                                            
                                             <div style={{height:"10px"}}></div>                                    
+                                            
                                             <a href="/product" className={styles.f__no_und_aways}>
                                                 <div className={styles.f__medium}>
                                                     智能客服
                                                 </div>
                                             </a>
+
                                             <div style={{height:"10px"}}></div>
+                                            
                                             <a href="/cloud-call-center" className={styles.f__no_und_aways}>
                                                 <div className={styles.f__medium}>
                                                     云呼叫中心
@@ -87,168 +89,18 @@ class NavHeader extends React.Component {
                                                 </div>
                                             </a>
 
-                                            {/*
+                                      
 
-                                                <div style={{height:"30px"}}></div>
-                                                <div className={styles.t__h4}>
-                                                <font>
-                                                行业解决方案
-                                                </font>
-                                                </div>                                                               
-                                                <div className={styles.hr__grey}></div>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/quick-sale-product-solutions" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                快消品解决方案
-                                                </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/commerce-solutions" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                电商行业解决方案  
-                                                </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/manufacturing-sulotions" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                制造业解决方案  
-                                                </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/automotive-service-solutions" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                汽车服务解决方案   
-                                                </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/education-training-solutions" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                教育培训解决方案
-                                                </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/finacial-insurance-solutions" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                金融保险解决方案                                                              </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/medical-health-solutions" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                医疗健康解决方案                                                                 </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/restaurant-chain-solution" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                餐饮连锁解决方案                                                           </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/local-living-solution" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                本地生活解决方案                                                           </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/real-estate-proper-solution" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                房产物业解决方案
-                                                </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/tourism-hotel-industry-solutions" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                旅游酒店行业解决方案  
-                                                </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="/government-solutions" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                政府与事业单位解决方案  
-                                                </font>
-                                                </div>
-                                                </a>
-                                                </div>
-                                                <div className={styles.g__c5_layouts}>
-                                                <div className={styles.t__h4}>
-                                                <font>
-                                                应用场景
-                                                </font>
-                                                </div>
-                                                <div className={styles.hr__grey}></div>
-                                                <div style={{height:"10px"}}></div>                                    
-                                                <a href="/transform-customs" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                获取和转化销售线索
-                                                </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>                                    
-                                                <a href="/guide-attract-customers" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                引导和吸引客户
-                                                </font>
-                                                </div>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>                                    
-                                                <a href="/conversion-business" className={styles.f__no_und_aways}>
-                                                <div className={styles.f__medium}>
-                                                <font style={{color:"black",fontSize:"16px"}}>
-                                                支持客户并提高客户满意度
-                                                </font>
-                                                </div>
-                                                </a>
-                                              */}
-
-                                                {/* <div style={{height:"30px"}}></div>
-
-                                                    <div className={styles.t__h4}>
-                                                    <font>
-                                                    产品资源
-                                                    </font>
-                                                    </div>
-                                                    <div className={styles.hr__grey}></div>
-                                                    <div style={{height:"10px"}}></div>
-                                                    <a href="/doc/" className={styles.f__no_und_aways}>
-                                                    <div className={styles.f__medium}>
-                                                    <font style={{color:"black",fontSize:"16px"}}>
-                                                    开发者文档  
-                                                    </font>
-                                                    </div>
-                                                    </a>
-                                                  */}
-                                                <div style={{height:"30px"}}></div>
-                                                <a href="/pricing" className={styles.f__no_und_aways}>
-                                                    <font style={{color:"black"}}>
+                                            <div style={{height:"30px"}}></div>
+                                            <a href="/pricing" className={styles.f__no_und_aways}>
+                                                <font style={{color:"black"}}>
                                                         <div className={styles.t__h4}>
                                                             定价
                                                         </div>
                                                     </font>
-                                                </a>
-                                                <div style={{height:"10px"}}></div>
-                                                <a href="https://ppmessage.cn/ppkefu/#!/app/signin"
+                                            </a>
+                                            <div style={{height:"10px"}}></div>
+                                            <a href="https://ppmessage.cn/ppkefu/#!/app/signin"
                                                    target="_blank" rel="noopener noreferrer"
                                                    className={styles.f__no_und_aways}>
                                                     <font style={{color:"black"}}>
@@ -257,11 +109,11 @@ class NavHeader extends React.Component {
                                                         </div>
                                                     </font>
                                                 </a>
-                                                </div>
+                                        </div>
                                     </div>
                                 </Hamburger>
                             </div>
-                            
+                           
                             <div className="navheader-link">
                                 <NavDropdown title="产品">
                                     <div style={{
@@ -357,14 +209,31 @@ class NavHeader extends React.Component {
                             <a href="/pricing" className="navheader-link">
                                 定价
                             </a>
+                            
+                        </div>
+                        
+                        <div class="navheader-flex-space">
+                            
+                        </div>
+                            
+                        <div class="navheader-actions">
+                            
+                            <div class="navheader-office-phone">
+                                <p>010-64188187</p>
+                            </div>
+
+                            <div>
                             <a href="https://ppmessage.cn/ppkefu/#!/app/signin"
                                target="_blank" rel="noopener noreferrer"
-                               className="navheader-link" style={{paddingRight:"50px"}}>
+                               className="navheader-signin-button">
                                 登录
                             </a>
+                            </div>
+
                             <div className="navheader-enter-mobile">
                                 <EnterYourMobile size="small"/>
                             </div>
+                            
                         </div>
                     </div>            
                 </div>
