@@ -212,13 +212,13 @@ class NavHeader extends React.Component {
                             
                         </div>
                         
-                        <div class="navheader-flex-space">
+                        <div className="navheader-flex-space">
                             
                         </div>
                             
-                        <div class="navheader-actions">
+                        <div className="navheader-actions">
                             
-                            <div class="navheader-office-phone">
+                            <div className="navheader-office-phone">
                                 <p>010-64188187</p>
                             </div>
 

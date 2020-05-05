@@ -1,0 +1,22 @@
+.contact-us-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-us-container {
+    max-width: 1144px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.contact-us-mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-us-mail > div {
+    display: flex;
+    flex-direction: row;
+}

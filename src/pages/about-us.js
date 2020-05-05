@@ -4,6 +4,7 @@ import styles from "./about-us.module.css";
 import Layout from "./layout";
 import {Helmet} from "react-helmet";
 
+import "./about-us.css"
 
 export default () => (
     <Layout>
@@ -60,7 +61,8 @@ export default () => (
                 </div>
             </div>
             <section id="lianxiwomen" />
-            <div className={styles.m1}>
+
+            <div className="contact-us-container">
                 <div style={{height:"80px"}}></div>
                 <div className={styles.title}>
                     <p className={styles.p1} style={{marginBottom:"0px"}}>
@@ -69,43 +71,34 @@ export default () => (
                     <p className={styles.p2}>Contact us
                     </p>
                 </div>
-                <div style={{width:"1060px",margin:"0 auto" }} className={styles.text_s}>
-                    <div className={styles.float}>
-                        <ul className={styles.m2_ul}>
-                            <li className={styles.m2_li}>
-                                
-                                <img src={require("../images/aboutus-telephone.png")} style={{marginRight:"10px",marginTop:"-3px",marginBottom:"-5px"}} alt="PPMESSAGE 公司电话" />
-                                <div style={{display:"inline-block"}}><font style={{fontWeight:"bold",fontSize:"15px"}}>联系电话：</font><font>010-64188187</font>
-                                </div>
-                            </li>
-                            <li className={styles.m2_li}>
-                                <img src={require("../images/aboutus-mail.png")} style={{marginRight:"10px",marginTop:"-3px",marginBottom:"-5px"}} alt="PPMESSAGE 公司邮箱"/>
-                                <div style={{display:"inline-block"}}><font style={{fontWeight:"bold",fontSize:"15px"}}>邮箱联系：</font><font>support@mg.ppmessage.cn</font>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className={styles.float} style={{marginRight:"85px"}}>
 
-                        <ul className={styles.m2_ul}>
-                            <li className={styles.m2_li}>
-                                <img src={require("../images/aboutus-address.png")} style={{marginRight:"10px",marginTop:"-3px",marginBottom:"-5px"}} alt="PPMESSAGE 公司地址" />
-                                <div style={{display:"inline-block"}}><font style={{fontWeight:"bold",fontSize:"15px"}}>销售和客户支持中心：</font><font>北京市朝阳区锦芳路1号院1号楼2单元2003
-                                </font>
-                                </div>
-                            </li>
-                            <li className={styles.m2_li}>
-                                <img src={require("../images/aboutus-address.png")} style={{marginRight:"10px",marginTop:"-3px",marginBottom:"-5px"}} alt="PPMESSAGE 公司地址" />
-                                <div style={{display:"inline-block"}}><font style={{fontWeight:"bold",fontSize:"15px"}}>研发中心：</font><font>北京市海淀区中关村东升科技园B-2楼一层
-                                </font>
-                                </div>                                                                   </li>                        
-                        </ul>                   
+                <div className="contact-us-content">
+                    
+                    <div className="contact-us-mail">
+                        <div>
+                            <div>
+                                <img src={require("../images/aboutus-telephone.png")} style={{ marginRight: "10px", marginTop: "-3px", marginBottom: "-5px" }} alt="PPMESSAGE 公司电话" />
+                            </div>
+                            <div style={{ display: "inline-block" }}>
+                                <font style={{ fontWeight: "bold", fontSize: "15px" }}>联系电话：</font><font>010-64188187</font>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src={require("../images/aboutus-mail.png")} style={{ marginRight: "10px", marginTop: "-3px", marginBottom: "-5px" }} alt="PPMESSAGE 公司邮箱" />
+                            </div>
+                            <div style={{ display: "inline-block" }}><font style={{ fontWeight: "bold", fontSize: "15px" }}>邮箱联系：</font><font>support@mg.ppmessage.cn</font>
+                            </div>
+                        </div>
                     </div>
-                    <div className={styles.float} >
-                        <img src="https://ppmessage.cn/images/qrcode_wechat_offical-pp-message.jpg" width="92px"  style={{marginBottom:"0"}} alt="PPMESSAGE 微信公众号" />
-                        <p>微信公众号
-                        </p>
+
+                    <div className="contact-us-wechat">
+                        <div>
+                            <img style={{maxHeight:"90px"}} src={require("../images/qrcode_wechat_offical-pp-message.jpg")} alt="PPMESSAGE 微信公众号" />
+                        </div>
+                        <p>微信公众号</p>
                     </div>
+
                 </div>
             </div>
         </div>
