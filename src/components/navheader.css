@@ -15,6 +15,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
+    background-color:white;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     position:fixed;      
@@ -35,6 +36,13 @@
     padding-right:25px;
     padding-left:25px;
     padding-top:28px;
+}
+
+.navheader-link .navheader-dropdown-item-title {
+    font-family:"Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+}
+
+.navheader-link > .navdropdown > .navdropdown-title {
     font-family:"Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
 }
 
