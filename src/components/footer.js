@@ -188,6 +188,10 @@ class Footer extends React.Component {
                                 <span style={{ "marginRight": "20px" }}>© 北京优锐科技有限公司</span>
                                 <span>京ICP备13021343号-2</span>
                             </p>
+                            		 	<div style="width:300px;margin:0 auto; padding:20px 0;">
+		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502040824" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010502040824号</p></a>
+		 	</div>
+
                             <p className="seo" style={{
                                 "textAlign": "center",
                                 "fontSize": "12px",
