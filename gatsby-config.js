@@ -26,7 +26,6 @@ module.exports = {
     'gatsby-transformer-versions-yaml',
     'gatsby-plugin-netlify',
     'gatsby-plugin-glamor',
-    'gatsby-plugin-polyfill-io',
     'gatsby-plugin-twitter',
     {
       resolve: 'gatsby-plugin-nprogress',

@@ -27,7 +27,7 @@ class Footer extends React.Component {
                 a.type = 'text/javascript'; a.charset = 'utf-8';
                 a.src = j;
                 var b = d.getElementsByTagName('head')[0];
-                b.append(a)
+                b.parentNode.insertBefore(a, b);
             }
             l('https://ppmessage.cn/ppcom/assets/shim/shim.js');
         })();
