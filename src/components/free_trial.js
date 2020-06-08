@@ -8,7 +8,7 @@ export default () => {
                 <ul className="checkmarks">
                     <li className="checkmarks-item">
                         <span className="checkmarks-icon"></span>
-                        <span>15天免费试用</span>
+                        <span>30天全功能免费试用</span>
                     </li>
                     <li className="checkmarks-item">
                         <span className="checkmarks-icon"></span>
@@ -16,7 +16,7 @@ export default () => {
                     </li>
                     <li className="checkmarks-item">
                         <span className="checkmarks-icon"></span>
-                        <span className="">随时取消</span>
+                        <span className="">满意再付款</span>
                     </li>
                 </ul>
             </span>
