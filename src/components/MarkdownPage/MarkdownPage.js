@@ -9,15 +9,15 @@ import Container from 'components/Container';
 import Flex from 'components/Flex';
 import MarkdownHeader from 'components/MarkdownHeader';
 import NavigationFooter from 'templates/components/NavigationFooter';
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import StickyResponsiveSidebar from 'components/StickyResponsiveSidebar';
 import TitleAndMetaTags from 'components/TitleAndMetaTags';
 import findSectionForPath from 'utils/findSectionForPath';
 import toCommaSeparatedList from 'utils/toCommaSeparatedList';
-import {sharedStyles} from 'theme';
+import { sharedStyles } from 'theme';
 import createOgUrl from 'utils/createOgUrl';
 
-import type {Node} from 'types';
+import type { Node } from 'types';
 
 type Props = {
     authors: Array<string>,
@@ -32,138 +32,138 @@ type Props = {
 };
 
 const getPageById = (sectionList: Array<Object>, templateFile: ?string) => {
-    if (!templateFile) {
-        return null;
-    }
+  if (!templateFile) {
+    return null;
+  }
 
-    const sectionItems = sectionList.map(section => section.items);
-    const flattenedSectionItems = [].concat.apply([], sectionItems);
-    const linkId = templateFile.replace('.html', '');
+  const sectionItems = sectionList.map(section => section.items);
+  const flattenedSectionItems = [].concat.apply([], sectionItems);
+  const linkId = templateFile.replace('.html', '');
 
-    return flattenedSectionItems.find(item => item.id === linkId);
+  return flattenedSectionItems.find(item => item.id === linkId);
 };
 
 
 class MarkdownPage extends Component<Props, State> {
 
-    constructor(props: Props) {
-        super(props);
+  constructor(props: Props) {
+    super(props);
 
-        this.state = {
-            bottom: false
-        };
+    this.state = {
+      bottom: false
+    };
 
-        this._onScrollEvent = this._onScrollEvent.bind(this);
-        
+    this._onScrollEvent = this._onScrollEvent.bind(this);
+
+  }
+
+  componentDidMount() {
+  }
+
+  _onScrollEvent(e) {
+    let _toBottom = window.document.documentElement.offsetHeight - window.document.documentElement.scrollTop;
+    if (_toBottom < 1572) {
+      this.setState({ bottom: true });
+    } else {
+      this.setState({ bottom: false });
     }
+  }
 
-    componentDidMount() {
-    }
-    
-    _onScrollEvent(e) {
-        let _toBottom = window.document.documentElement.offsetHeight - window.document.documentElement.scrollTop;        
-        if (_toBottom < 1572) {
-            this.setState({bottom: true});
-        } else {
-            this.setState({bottom: false});
-        }
-    }
+  render() {
+    let {
+      authors = [],
+      createLink,
+      date,
+      enableScrollSync,
+      ogDescription,
+      location,
+      markdownRemark,
+      sectionList,
+      titlePostfix = '',
+    } = this.props;
 
-    render() {
-        let {
-            authors = [],
-            createLink,
-            date,
-            enableScrollSync,
-            ogDescription,
-            location,
-            markdownRemark,
-            sectionList,
-            titlePostfix = '',
-        } = this.props;
+    let { bottom } = this.state;
 
-        let {bottom} = this.state;
-        
-        const hasAuthors = authors.length > 0;
-        const titlePrefix = markdownRemark.frontmatter.title || '';
-        
-        const prev = getPageById(sectionList, markdownRemark.frontmatter.prev);
-        const next = getPageById(sectionList, markdownRemark.frontmatter.next);
-        
-        return (
-            <Flex
-                direction="column"
-                grow="1"
-                shrink="0"
-                halign="stretch"
-                css={{
-                    width: '100%',
-                    flex: '1 0 auto',
-                    position: 'relative',
-                    zIndex: 0,
-                }}>
-                <TitleAndMetaTags
-                ogDescription={ogDescription}
-                ogUrl={createOgUrl(markdownRemark.fields.slug)}
-                title={`${titlePrefix}${titlePostfix}`}
-                />
-                <div css={{flex: '1 0 auto'}}>
-                <Container>
-                <div css={sharedStyles.articleLayout.container}>
-                    <Flex type="article" direction="column" grow="1" halign="stretch">
-                        <MarkdownHeader title={titlePrefix} />
+    const hasAuthors = authors.length > 0;
+    const titlePrefix = markdownRemark.frontmatter.title || '';
 
-                        {(date || hasAuthors) && (
-                             <div css={{marginTop: 15}}>
-                                 {date}{' '}
-                                 {hasAuthors && (
-                                      <span>
-                                          by{' '}
-                                          {toCommaSeparatedList(authors, author => (
-                                              <a
-                                                  css={sharedStyles.link}
-                                                  href={author.frontmatter.url}
-                                                  key={author.frontmatter.name}>
-                                                  {author.frontmatter.name}
-                                              </a>
-                                          ))}
-                                      </span>
-                                 )}
-                             </div>
-                        )}
+    const prev = getPageById(sectionList, markdownRemark.frontmatter.prev);
+    const next = getPageById(sectionList, markdownRemark.frontmatter.next);
 
-                        <div css={sharedStyles.articleLayout.content}>
-                            <div
-                                css={[sharedStyles.markdown]}
-                                dangerouslySetInnerHTML={{__html: markdownRemark.html}}
-                            />
-                        </div>
-                    </Flex>
+    return (
+      <Flex
+        direction="column"
+        grow="1"
+        shrink="0"
+        halign="stretch"
+        css={{
+          width: '100%',
+          flex: '1 0 auto',
+          position: 'relative',
+          zIndex: 0,
+        }}>
+        <TitleAndMetaTags
+          ogDescription={ogDescription}
+          ogUrl={createOgUrl(markdownRemark.fields.slug)}
+          title={`${titlePrefix}${titlePostfix}`}
+        />
+        <div css={{ flex: '1 0 auto' }}>
+          <Container>
+            <div css={sharedStyles.articleLayout.container}>
+              <Flex type="article" direction="column" grow="1" halign="stretch">
+                <MarkdownHeader title={titlePrefix} />
 
-                    <div style={{position:"relative", backgroundColor: '#f7f7f7'}} css={sharedStyles.articleLayout.sidebar}>
-                        <StickyResponsiveSidebar
-                            enableScrollSync={enableScrollSync}
-                            createLink={createLink}
-                            defaultActiveSection={findSectionForPath(
-                                    location.pathname,
-                                    sectionList,
-                            )}
-                            bottom={bottom}
-                            location={location}
-                            sectionList={sectionList}
-                        />
-                    </div>
-                </div>
-                    </Container>
-                </div>
-
-                {(next || prev) && (
-                     <NavigationFooter location={location} next={next} prev={prev} />
+                {(date || hasAuthors) && (
+                  <div css={{ marginTop: 15 }}>
+                    {date}{' '}
+                    {hasAuthors && (
+                      <span>
+                                                by{' '}
+                        {toCommaSeparatedList(authors, author => (
+                          <a
+                            css={sharedStyles.link}
+                            href={author.frontmatter.url}
+                            key={author.frontmatter.name}>
+                            {author.frontmatter.name}
+                          </a>
+                        ))}
+                      </span>
+                    )}
+                  </div>
                 )}
-            </Flex>
-        );
-    }
-    
+
+                <div css={sharedStyles.articleLayout.content}>
+                  <div
+                    css={[sharedStyles.markdown]}
+                    dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
+                  />
+                </div>
+              </Flex>
+
+              <div style={{ position: "relative", backgroundColor: '#f7f7f7' }} css={sharedStyles.articleLayout.sidebar}>
+                <StickyResponsiveSidebar
+                  enableScrollSync={enableScrollSync}
+                  createLink={createLink}
+                  defaultActiveSection={findSectionForPath(
+                    location.pathname,
+                    sectionList,
+                  )}
+                  bottom={bottom}
+                  location={location}
+                  sectionList={sectionList}
+                />
+              </div>
+            </div>
+          </Container>
+        </div>
+
+        {(next || prev) && (
+          <NavigationFooter location={location} next={next} prev={prev} />
+        )}
+      </Flex>
+    );
+  }
+
 }
 
 export default MarkdownPage;
