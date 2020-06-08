@@ -5,13 +5,15 @@
  * @flow
  */
 
-import {Link} from 'gatsby';
+import { Link } from 'gatsby';
 import React from 'react';
 import ExternalLinkSvg from 'templates/components/ExternalLinkSvg';
 import slugify from 'utils/slugify';
-import {colors, media} from 'theme';
+import { colors, media } from 'theme';
 
-import type {Node} from 'react';
+import type { Node } from 'react';
+
+import { Location } from '@reach/router';
 
 type CreateLinkBaseProps = {
   isActive: boolean,
@@ -25,10 +27,18 @@ const createLinkBlog = ({
   section,
 }: CreateLinkBaseProps): Node => {
   return (
-    <Link css={[linkCss, isActive && activeLinkCss]} to={item.id}>
-      {isActive && <span css={activeLinkBefore} />}
-      {item.title}
-    </Link>
+    <Location>
+      {({ location }) => {
+        let sheet = "";
+        if (location.search == "?sheet=true") {
+          sheet = "?sheet=true";
+        }
+        return <Link css={[linkCss, isActive && activeLinkCss]} to={item.id + sheet}>
+          {isActive && <span css={activeLinkBefore} />}
+          {item.title}
+        </Link>
+      }}
+    </Location>
   );
 };
 
@@ -65,12 +75,20 @@ const createLinkDocs = ({
   section,
 }: CreateLinkBaseProps): Node => {
   return (
-    <Link
-      css={[linkCss, isActive && activeLinkCss]}
-      to={slugify(item.id, section.directory)}>
-      {isActive && <span css={activeLinkBefore} />}
-      {item.title}
-    </Link>
+    <Location>
+      {({ location }) => {
+        let sheet = "";
+        if (location.search == "?sheet=true") {
+          sheet = "?sheet=true";
+        }
+        return <Link
+          css={[linkCss, isActive && activeLinkCss]}
+          to={slugify(item.id, section.directory) + sheet}>
+          {isActive && <span css={activeLinkBefore} />}
+          {item.title}
+        </Link>
+      }}
+    </Location>
   );
 };
 
