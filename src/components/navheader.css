@@ -19,6 +19,7 @@
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     position:fixed;      
+    border-bottom: solid #3462df 2px;
 }
 
 .navheader-link {
