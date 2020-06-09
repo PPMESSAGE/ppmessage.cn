@@ -39,7 +39,9 @@ const MarkdownHeader = ({title}: {title: string}) => (
             right: '0px',
             top: '0px',
           }}>
-            <a href={location.href.replace('?sheet=true', '')} target="_blank"></a>
+            <a href={location.href.replace('?sheet=true', '')} target="_blank">
+              <img src={require('../../images/open_in_new.svg')} />
+            </a>
           </div>
         }
         return null
