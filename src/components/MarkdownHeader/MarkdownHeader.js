@@ -11,7 +11,6 @@ import {colors, fonts, media} from 'theme';
 
 import { Location } from '@reach/router';
 
-
 const MarkdownHeader = ({title}: {title: string}) => (
   <Flex type="header" halign="space-between" valign="baseline">
     <h1
@@ -35,12 +34,13 @@ const MarkdownHeader = ({title}: {title: string}) => (
       {({location}) => {
         if (location.search == '?sheet=true') {
           return <div css={{
+            zIndex: '99',
             position: 'fixed',
             right: '0px',
             top: '0px',
           }}>
             <a href={location.href.replace('?sheet=true', '')} target="_blank">
-              <img src={require('../../images/open_in_new.svg')} />
+              在新窗口打开
             </a>
           </div>
         }
