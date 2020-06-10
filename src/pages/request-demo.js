@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet';
 import Layout from './layout';
 import PPButton from '../components/buttton';
 
-import styles from './pricing.module.css';
+import './request-demo.css';
 
 export default () => {
   return (
