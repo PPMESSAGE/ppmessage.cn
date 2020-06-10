@@ -126,6 +126,12 @@
     color: #f3f3f3;
 }
 
+.request-demo-invalid-input {
+    color: #ff5660;
+    font-size: .85rem;
+    margin-bottom: .5rem;
+}
+
 @media (min-width: 992px) {
     .request-demo-container {
         padding-left: 2.5rem;

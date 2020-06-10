@@ -11,6 +11,7 @@ class RequestDemo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      start_check: false,
       user_fullname: "",
       user_mobile: "",
       user_company: "",
@@ -25,18 +26,22 @@ class RequestDemo extends React.Component {
   }
 
   handleUserFullNameChange(event) {
+    this.setState({start_check: false});
     this.setState({ user_fullname: event.target.value });
   }
 
   handleUserMobileChange(event) {
+    this.setState({start_check: false});
     this.setState({ user_mobile: event.target.value });
   }
 
   handleUserCompany(event) {
+    this.setState({start_check: false});
     this.setState({ user_company: event.target.value });
   }
 
   handleUserJobTitle(event) {
+    this.setState({start_check: false});
     this.setState({user_job_title:event.target.value});
   }
 
@@ -56,7 +61,32 @@ class RequestDemo extends React.Component {
     );
   }
 
+  _valid_field(field_name) {
+    if (!this.state.start_check) {
+      return true;
+    }
+
+    if (!this.state[field_name]) {
+      return false;
+    }
+    if (this.state[field_name].length < 2) {
+      return false;
+    }
+    if (field_name == 'user_mobile' && this.state.user_mobile.length != 11) {
+      return false;
+    }
+    return true;
+  }
+
+  _render_valid_field(field_name) {
+    if (this._valid_field(field_name)) {
+      return null;
+    }
+    return <div className="request-demo-invalid-input">无效输入</div>
+  }
+
   _check_request_fields() {
+    this.setState({start_check: true});
     if (!this.state.user_fullname || this.state.user_fullname.length < 2) {
       return false;
     }
@@ -157,12 +187,14 @@ class RequestDemo extends React.Component {
                 <label>姓名*</label>
                 <div>
                   <input value={this.state.user_fullname} onChange={this.handleUserFullNameChange} />
+                  {this._render_valid_field('user_fullname')}
                 </div>
               </div>
               <div className="request-demo-input-container">
                 <label>手机*</label>
                 <div>
                   <input value={this.state.user_mobile} onChange={this.handleUserMobileChange} />
+                  {this._render_valid_field('user_mobile')}
                 </div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -170,12 +202,14 @@ class RequestDemo extends React.Component {
                   <label>公司名称*</label>
                   <div>
                     <input value={this.state.user_company} onChange={this.handleUserCompany} />
+                    {this._render_valid_field('user_company')}
                   </div>
                 </div>
                 <div className="request-demo-input-container">
                   <label>职位*</label>
                   <div>
                     <input value={this.state.user_job_title} onChange={this.handleUserJobTitle} />
+                    {this._render_valid_field('user_job_title')}
                   </div>
                 </div>
 
