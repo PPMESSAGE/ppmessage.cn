@@ -103,7 +103,7 @@ class NavHeader extends React.Component {
                         className={styles.f__no_und_aways}>
                         <font style={{ color: 'black' }}>
                           <div className={styles.t__h4}>
-                                                        登录
+                            登录
                           </div>
                         </font>
                       </a>
@@ -220,14 +220,19 @@ class NavHeader extends React.Component {
                 <a href="https://ppmessage.cn/ppkefu/#!/app/signin"
                   target="_blank" rel="noopener noreferrer"
                   className="navheader-signin-button">
-                                    登录
+                    登录
                 </a>
               </div>
 
-              <div className="navheader-enter-mobile">
-                <EnterYourMobile size="small" />
+              <div style={{width:"120px", height:"40px"}}>
+                <a href="/request-demo/"
+                  target="_blank" rel="noopener noreferrer"
+                  className="navheader-request-demo-button">
+                    申请演示
+                </a>
               </div>
 
+              
             </div>
           </div>
         </div>

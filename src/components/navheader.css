@@ -131,6 +131,22 @@
     flex-direction: "row";
 }
 
+.navheader-request-demo-button {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #000028;
+    color: white;
+    border-radius: 99px;
+    font-weight: 700;
+}
+
 @media screen and (max-width:960px){
     .navheader-enter-mobile {
         display: none;
