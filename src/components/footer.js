@@ -58,7 +58,7 @@ class Footer extends React.Component {
                       <div className="start-use">
                         <div className="intro">
                           <h2 className={styles.t__h2}>
-                                                        开始免费使用
+                              开始免费使用
                           </h2>
                         </div>
 
@@ -179,7 +179,7 @@ class Footer extends React.Component {
                   </div>
                 </div>
               </div>
-              <p className="icp">
+              <div className="icp">
                 <div>
                   <span style={{ 'marginRight': '20px' }}>© 北京优锐科技有限公司</span>
                 </div>
@@ -196,10 +196,10 @@ class Footer extends React.Component {
                   </span>
                 </div>
                                 
-              </p>
+              </div>
                             
                             
-              <p className="seo" style={{
+              <div className="seo" style={{
                 'textAlign': 'center',
                 'fontSize': '12px',
                 'color': '#888',
@@ -212,7 +212,7 @@ class Footer extends React.Component {
                 <a href="https://ppmessage.cn/cloud-call-center/" title="云呼叫中心">云呼叫中心&nbsp;</a>
                 <a href="https://ppmessage.cn/intelligent-customer-service-robot/" title="客服机器人">客服机器人&nbsp;</a>
                 <a href="https://ppmessage.cn/ppkefu/" title="免费试用">免费试用&nbsp;</a>
-              </p>
+              </div>
             </footer>
           )
         }}
