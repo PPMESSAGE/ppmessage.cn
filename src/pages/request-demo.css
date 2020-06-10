@@ -1,0 +1,35 @@
+.request-demo-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.request-demo-left-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.request-demo-right-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .request-demo-container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .request-demo-left-container {
+        width: 50%;
+        padding-right: 4rem;
+        padding-top: 4rem;
+        
+    }
+    .request-demo-right-container {
+        width:50%;
+    }
+}
