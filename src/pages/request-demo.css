@@ -5,6 +5,27 @@
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
+    padding-top: 80px;
+}
+
+.request-demo-title {
+    font-size: 49px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000028;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    line-height: 1.15;
+    letter-spacing: -0.05rem;
+}
+
+.request-demo-subtitle {
+    line-height: 1.15;
+    letter-spacing: -0.05rem;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000028;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 .request-demo-left-container {
@@ -14,7 +35,44 @@
 
 .request-demo-right-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
+}
+
+.request-demo-image-container > img {
+    max-width: 100%;
+}
+
+.request-demo-image-container {
+    padding-bottom: 30px;
+}
+
+.request-demo-desc-general > p {
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    font-family: 'Robert', sans-serif;
+    font-weight: 400;
+}
+
+.request-demo-desc-ul > p {
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    font-family: 'Robert', sans-serif;
+    font-weight: 800;    
+}
+
+.request-demo-desc-ul > ul {
+    padding: 0 0 0 20px;
+    list-style: outside;
+}
+
+.request-demo-desc-ul > ul > li > p {
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: .5rem;
+    font-family: 'Robert', sans-serif;
+    font-weight: 300;    
 }
 
 @media (min-width: 992px) {
@@ -27,9 +85,10 @@
         width: 50%;
         padding-right: 4rem;
         padding-top: 4rem;
-        
+
     }
     .request-demo-right-container {
+        border-left: 1px solid #e4e3e1;
         width:50%;
     }
 }
