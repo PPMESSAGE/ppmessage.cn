@@ -6,8 +6,8 @@
     background: white;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    border-bottom: solid #3462df 2px;
 }
-
 
 .navheader-fixed {
     height: 72px;
@@ -141,7 +141,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #000028;
+    background-color:rgb(52, 98, 223);
     color: white;
     border-radius: 99px;
     font-weight: 700;

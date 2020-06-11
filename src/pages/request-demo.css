@@ -116,7 +116,7 @@
     text-align:center;
     width: calc(100% - 10px);
     padding: 12.5px 2rem;
-    background-color: #000028;
+    background-color: rgb(52, 98, 223);
     font-size: 18px;
     min-width: 185px;
     font-weight: 600;

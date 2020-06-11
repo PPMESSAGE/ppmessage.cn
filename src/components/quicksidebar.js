@@ -42,7 +42,7 @@ class QuickSideBar extends React.Component {
             role="button" tabIndex={0}>
             <div className="quick-side-bar-item-wrapper">
               <div><img src={require('../images/svg/support_agent-24px.svg')} /></div>
-              <p>在线客服</p>
+              <p>客服</p>
             </div>
           </div>
 
@@ -52,7 +52,7 @@ class QuickSideBar extends React.Component {
             
             <div className="quick-side-bar-item-wrapper">
               <div><img src={require('../images/svg/how_to_reg-24px.svg')} /></div>
-              <p>用户注册</p>
+              <p>注册</p>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ class QuickSideBar extends React.Component {
             role="button" tabIndex={0}>
             <div className="quick-side-bar-item-wrapper">
               <div><img src={require('../images/svg/airplay-24px.svg')} /></div>
-              <p>申请演示</p>
+              <p>演示</p>
             </div>
           </div>
 
