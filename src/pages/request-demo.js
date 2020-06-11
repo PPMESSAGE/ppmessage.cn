@@ -109,6 +109,14 @@ class RequestDemo extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     if (this._check_request_fields()) {
+      if (window.PP) {
+        window.PP.requestDemo({
+          user_company: this.state.user_company,
+          user_fullname: this.state.user_fullname,
+          user_mobile: this.state.user_mobile,
+          user_job_title: this.state.user_job_title,
+        });
+      }
       this._show_request_demo_success();
     } else {
       this._show_request_demo_error();
@@ -142,37 +150,32 @@ class RequestDemo extends React.Component {
             <div className="request-demo-desc-container">
 
               <div className="request-demo-desc-general">
-                <p> PPMESSAGE使高度了解您的客户的利益相关者能够以高度的个性化和成熟度，并且不需要任何编码技能，就可以最佳地构建，启动和部署自动客户体验。</p>
+                
+                <p>不仅仅是简单地用常见问题回答，PPMESSAGE鼓励您的客户自己采取行动，从而解决了90％以上的入站查询，并使您的在线业务代表能够自由地响应关键的交互。</p>
 
-                <p>不仅仅是简单地用常见问题回答，PPMESSAGE鼓励您的客户自己采取行动，从而解决了70％以上的入站查询，并使您的在线业务代表能够自由地响应关键的交互。</p>
-
-                <p>填写表格，我们将与您联系，讨论如何开始支持您的业务需求，客户参与策略和储蓄目标。</p>
+                <p>填写表格，我们将与您联系，讨论如何开始支持您的业务需求，客户参与策略和推广目标。</p>
               </div>
               <div className="request-demo-desc-ul">
                 <p>让我们向您展示PPMESSAGE如何：</p>
                 <ul>
                   <li>
                     <p>
-                                            使任何人都能在短短的几秒钟内以多种语言构建和修改引人入胜的内容
+                      能在短短的几分钟钟内以多种语言构建和修改引人入胜的内容
                     </p>
                   </li>
                   <li>
                     <p>
-                                            积极主动地进行追加销售，创造独特的客户旅程
+                      积极主动地进行追加销售，创造独特的客户旅程
                     </p>
                   </li>
                   <li>
                     <p>通过向现场人员的无缝切换实现全渠道支持</p>
                   </li>
                   <li>
-                    <p>
-                                            提供实时数据以改善客户体验并提高参与度
-                    </p>
+                    <p>提供实时数据以改善客户体验并提高参与度</p>
                   </li>
                   <li>
-                    <p>
-                                            提供持续咨询，以通过数字化转型为企业提供支持
-                    </p>
+                    <p>提供持续咨询，通过数字化转型为企业发展提供支持</p>
                   </li>
                 </ul>
               </div>
