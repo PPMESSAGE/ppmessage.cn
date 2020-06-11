@@ -1,11 +1,13 @@
 .request-demo-container {
     display: flex;
     flex-direction: row;
-    max-width: 80rem;
+    max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
     padding-top: 80px;
+    align-items: center;
+    justify-content: center;
 }
 
 .request-demo-title {
@@ -104,6 +106,10 @@
     border-radius: 9999px;
 }
 
+.request-demo-input-desc-container {
+    padding-left: 15px;    
+}
+
 .request-demo-input-desc-container > p {
     margin-bottom: 1.5rem;
     line-height: 1.35;
@@ -124,6 +130,7 @@
     cursor: pointer;
     text-decoration: none;
     color: #f3f3f3;
+    border: none;
 }
 
 .request-demo-invalid-input {
