@@ -10,28 +10,27 @@ class QuickSideBar extends React.Component {
   }
 
   render() {
-    return ( 
+    return (
       <div className="quick-side-bar-container">
         <div className="quick-side-bar-items">
           <div className="quick-side-bar-item">
-            <div>
-              <div><img src={require('../images/svg/phone.svg')} /></div>
+            <div className="quick-side-bar-item-wrapper">
+              <div><img src={require('../images/svg/support_agent-24px.svg')} /></div>
+              <p>在线客服</p>
+            </div>
+          </div>
+          <div className="quick-side-bar-item">
+            <div className="quick-side-bar-item-wrapper">
+              <div><img src={require('../images/svg/ring_volume-24px.svg')} /></div>
               <p>联系电话</p>
             </div>
           </div>
           <div className="quick-side-bar-item">
-            <div>
-              <div><img src={require('../images/svg/phone.svg')} /></div>
-              <p>联系电话</p>
+            <div className="quick-side-bar-item-wrapper">
+              <div><img src={require('../images/svg/mail_outline-24px.svg')} /></div>
+              <p>电子邮件</p>
             </div>
-          
-          </div>
-          <div className="quick-side-bar-item">
-            <div>
-              <div><img src={require('../images/svg/phone.svg')} /></div>
-              <p>联系电话</p>
-            </div>
-          
+
           </div>
         </div>
       </div>

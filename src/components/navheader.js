@@ -224,6 +224,14 @@ class NavHeader extends React.Component {
                 </a>
               </div>
 
+              <div>
+                <a href="https://ppmessage.cn/ppkefu/#!/app/signup"
+                  target="_blank" rel="noopener noreferrer"
+                  className="navheader-signin-button">
+                    注册
+                </a>
+              </div>
+
               <div style={{width:"120px", height:"40px"}}>
                 <a href="/request-demo/"
                   target="_blank" rel="noopener noreferrer"

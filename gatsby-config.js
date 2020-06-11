@@ -21,14 +21,6 @@ module.exports = {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
-    {
-      resolve:'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: /images\/svg/
-        }
-      }
-    },
     'gatsby-transformer-authors-yaml',
     'gatsby-transformer-home-example-code',
     'gatsby-transformer-versions-yaml',
