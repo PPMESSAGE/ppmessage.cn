@@ -100,10 +100,14 @@
 .request-demo-input-container > div > input {
     padding: 14px 1rem !important;
     margin-bottom: 1.5rem;
-    border: 1px solid #dae1e7;
+    border-bottom: 1px solid #dae1e7;
+    outline:none;
     width: 100%;
-    background:#f3f3f3;
-    border-radius: 9999px;
+    background:#f8f8f8;
+}
+
+.request-demo-input-container > div > input:focus {
+    border-bottom: 2px solid rgb(52, 98, 223);
 }
 
 .request-demo-input-desc-container {
@@ -127,9 +131,10 @@
     min-width: 185px;
     font-weight: 600;
     border-radius: 40px;
+    border:none;
     cursor: pointer;
     text-decoration: none;
-    color: #f3f3f3;
+    color: #f4f4f4;
     border: none;
 }
 
@@ -137,6 +142,7 @@
     color: #ff5660;
     font-size: .85rem;
     margin-bottom: .5rem;
+    margin-top: 1rem;
 }
 
 @media (min-width: 992px) {
