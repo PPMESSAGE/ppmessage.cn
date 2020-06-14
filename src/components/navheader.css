@@ -6,7 +6,7 @@
     background: white;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    border-bottom: solid #3462df 2px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.2);
 }
 
 .navheader-fixed {
@@ -19,7 +19,7 @@
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     position:fixed;      
-    border-bottom: solid #3462df 2px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.2);
 }
 
 .navheader-link {

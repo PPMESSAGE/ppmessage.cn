@@ -98,10 +98,12 @@
 }
 
 .request-demo-input-container > div > input {
+    border: none;
+    outline: none;
+    
     padding: 14px 1rem !important;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid #dae1e7;
-    outline:none;
     width: 100%;
     background:#f8f8f8;
 }
@@ -136,13 +138,14 @@
     text-decoration: none;
     color: #f4f4f4;
     border: none;
+    outline: none;
 }
 
 .request-demo-invalid-input {
     color: #ff5660;
     font-size: .85rem;
     margin-bottom: .5rem;
-    margin-top: 1rem;
+    margin-top: -1rem;
 }
 
 @media (min-width: 992px) {

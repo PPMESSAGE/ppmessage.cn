@@ -187,31 +187,27 @@ class RequestDemo extends React.Component {
           <div className="request-demo-right-container">
             <form onSubmit={this.handleSubmit}>
               <div className="request-demo-input-container">
-                <label>姓名*</label>
                 <div>
-                  <input value={this.state.user_fullname} onChange={this.handleUserFullNameChange} />
+                  <input placeholder="姓名*" value={this.state.user_fullname} onChange={this.handleUserFullNameChange} />
                   {this._render_valid_field('user_fullname')}
                 </div>
               </div>
               <div className="request-demo-input-container">
-                <label>手机*</label>
                 <div>
-                  <input value={this.state.user_mobile} onChange={this.handleUserMobileChange} />
+                  <input placeholder="手机*" value={this.state.user_mobile} onChange={this.handleUserMobileChange} />
                   {this._render_valid_field('user_mobile')}
                 </div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'row' }}>
                 <div className="request-demo-input-container">
-                  <label>公司名称*</label>
                   <div>
-                    <input value={this.state.user_company} onChange={this.handleUserCompany} />
+                    <input placeholder="公司名称*" value={this.state.user_company} onChange={this.handleUserCompany} />
                     {this._render_valid_field('user_company')}
                   </div>
                 </div>
                 <div className="request-demo-input-container">
-                  <label>职位*</label>
                   <div>
-                    <input value={this.state.user_job_title} onChange={this.handleUserJobTitle} />
+                    <input placeholder="职位*" value={this.state.user_job_title} onChange={this.handleUserJobTitle} />
                     {this._render_valid_field('user_job_title')}
                   </div>
                 </div>
