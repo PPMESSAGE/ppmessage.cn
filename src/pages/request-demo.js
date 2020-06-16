@@ -216,10 +216,7 @@ class RequestDemo extends React.Component {
 
               <div className="request-demo-input-desc-container">
                 <p>直接联系销售部门的人员，您可以致电 <strong>+86-10-64188187</strong>。</p>
-
                 <p>使用您提供给我们会与您联系。</p>
-
-                <p>提交此表格，即表示您同意允许PPMESSAGE收集以上提交的个人信息。</p>
               </div>
 
               <div className="request-demo-input-container">

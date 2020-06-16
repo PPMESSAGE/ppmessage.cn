@@ -58,7 +58,7 @@ class Footer extends React.Component {
                       <div className="start-use">
                         <div className="intro">
                           <h2 className={styles.t__h2}>
-                              开始免费使用
+                              免费试用
                           </h2>
                         </div>
 
