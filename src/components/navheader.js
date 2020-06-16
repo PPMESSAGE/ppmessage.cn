@@ -228,7 +228,7 @@ class NavHeader extends React.Component {
                 <a href="https://ppmessage.cn/ppkefu/#!/app/signup"
                   target="_blank" rel="noopener noreferrer"
                   className="navheader-signin-button">
-                    注册
+                    免费试用
                 </a>
               </div>
 
@@ -240,7 +240,6 @@ class NavHeader extends React.Component {
                 </a>
               </div>
 
-              
             </div>
           </div>
         </div>
