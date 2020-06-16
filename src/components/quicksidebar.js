@@ -41,27 +41,28 @@ class QuickSideBar extends React.Component {
             onClick={this.openOnlineService}
             role="button" tabIndex={0}>
             <div className="quick-side-bar-item-wrapper">
-              <div><img src={require('../images/svg/support_agent-24px.svg')} /></div>
-              <p>客服</p>
+              <div><img src={require('../images/svg/support_agent-white-24dp.svg')} /></div>
+              <p>在线咨询</p>
             </div>
           </div>
 
-          <div className="quick-side-bar-item" 
+          {/* <div className="quick-side-bar-item" 
             onClick={this.openRegisterUser}
             role="button" tabIndex={0}>
             
             <div className="quick-side-bar-item-wrapper">
-              <div><img src={require('../images/svg/how_to_reg-24px.svg')} /></div>
+              <div><img src={require('../images/svg/how_to_reg-white-24dp.svg')} /></div>
               <p>注册</p>
             </div>
           </div>
+         */}
 
           <div className="quick-side-bar-item"
             onClick={this.openRequestDemo}
             role="button" tabIndex={0}>
             <div className="quick-side-bar-item-wrapper">
-              <div><img src={require('../images/svg/airplay-24px.svg')} /></div>
-              <p>演示</p>
+              <div><img src={require('../images/svg/airplay-white-24dp.svg')} /></div>
+              <p>预约演示</p>
             </div>
           </div>
 

@@ -236,7 +236,7 @@ class NavHeader extends React.Component {
                 <a href="/request-demo/"
                   target="_blank" rel="noopener noreferrer"
                   className="navheader-request-demo-button">
-                    申请演示
+                    预约演示
                 </a>
               </div>
 

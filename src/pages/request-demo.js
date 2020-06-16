@@ -56,7 +56,7 @@ class RequestDemo extends React.Component {
   _show_request_demo_success() {
     notify.show(
       <div>
-          我们已经收到您的申请,我们会安排专门的技术人员与您联系演示事宜.
+          我们已经收到您的预约,我们会安排专门的技术人员与您联系演示事宜.
       </div>, 'success', 5000
     );
   }
@@ -136,7 +136,7 @@ class RequestDemo extends React.Component {
           <div className="request-demo-left-container">
             <div className="request-demo-title-container">
               <div className="request-demo-title">
-                <p>申请演示</p>
+                <p>预约演示</p>
               </div>
               <div className="request-demo-subtitle">
                 <p>了解行业领导者为何使用PPMESSAGE的AI聊天机器人实现自动化</p>
@@ -221,7 +221,7 @@ class RequestDemo extends React.Component {
 
               <div className="request-demo-input-container">
                 <Notifications />
-                <input type="submit" value="申请演示"></input>
+                <input type="submit" value="预约演示"></input>
               </div>
             </form>
           </div>
