@@ -1,0 +1,14 @@
+.request-demo-success-container{
+    padding-top: 80px;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.request-demo-success-container > div {
+    font-size: 2rem;
+    font-weight: bold;
+}

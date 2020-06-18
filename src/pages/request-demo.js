@@ -51,6 +51,7 @@ class RequestDemo extends React.Component {
         申请演示发现错误, 所有字段都需要填写
       </div>, 'error', 5000
     );
+    window.open('/request-demo-failed');
   }
 
   _show_request_demo_success() {
@@ -59,6 +60,7 @@ class RequestDemo extends React.Component {
           我们已经收到您的预约,我们会安排专门的技术人员与您联系演示事宜.
       </div>, 'success', 5000
     );
+    window.open('/request-demo-success');
   }
 
   _valid_field(field_name) {

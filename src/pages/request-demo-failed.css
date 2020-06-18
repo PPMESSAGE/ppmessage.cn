@@ -1,0 +1,14 @@
+.request-demo-failed-container{
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.request-demo-failed-container > div {
+    padding-top: 80px;
+    font-size: 2rem;
+    font-weight: bold;
+}
