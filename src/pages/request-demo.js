@@ -51,7 +51,11 @@ class RequestDemo extends React.Component {
         申请演示发现错误, 所有字段都需要填写
       </div>, 'error', 5000
     );
-    window.open('/request-demo-failed');
+
+    setTimeout(function() {
+      window.open('/request-demo-failed');
+    }, 1000);
+    
   }
 
   _show_request_demo_success() {

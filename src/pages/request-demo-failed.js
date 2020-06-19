@@ -24,7 +24,7 @@ class RequestDemoFailed extends React.Component {
 
         <div className="request-demo-failed-container">
           <div>
-            预约演示遇到问题。您可以重新预约或者直接跟我们的客服人员联系。
+            预约演示遇到问题，可能是表单没有正确填写。您可以重新预约或者直接跟我们的客服人员联系。
           </div>
           <div>
             <button onClick={(event) => {
