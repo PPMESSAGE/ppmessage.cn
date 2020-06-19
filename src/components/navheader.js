@@ -217,7 +217,7 @@ class NavHeader extends React.Component {
             <div className="navheader-actions">
 
               <div>
-                <a href="https://ppmessage.cn/ppkefu/#!/app/signin"
+                <a href="https://sign.ppmessage.cn/signin?compatible=true"
                   target="_blank" rel="noopener noreferrer"
                   className="navheader-signin-button">
                     登录
@@ -225,7 +225,7 @@ class NavHeader extends React.Component {
               </div>
 
               <div>
-                <a href="https://ppmessage.cn/ppkefu/#!/app/signup"
+                <a href="https://sign.ppmessage.cn/signup?compatible=true"
                   target="_blank" rel="noopener noreferrer"
                   className="navheader-signin-button">
                     免费试用
