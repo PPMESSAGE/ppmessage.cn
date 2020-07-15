@@ -52,11 +52,11 @@ class RequestDemo extends React.Component {
       </div>, 'error', 5000
     );
 
-    setTimeout(function() {
-      window.open('/request-demo-failed');
-    }, 1000);
-    
-  }
+  /* 
+  setTimeout(function() {
+    window.open('/request-demo-failed');
+  }, 1000);
+  */}
 
   _show_request_demo_success() {
     notify.show(
