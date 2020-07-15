@@ -10,34 +10,32 @@ class EnterYourMobile extends React.Component {
     super(props);
     this.state = { size: props.size }
     this.submitMobile = this.submitMobile.bind(this)
-    this.resize = this.resize.bind(this)
+    this.resize = this.resize.bind(this);
   }
-
 
   submitMobile() {
-    let signup_url = "https://ppmessage.cn/ppkefu/#!/app/signup"
+    let signup_url = 'https://signup.ppmessage.cn';
     if (this.refs.mobile.value && this.refs.mobile.value.length) {
-      signup_url = signup_url + "?as=" + this.refs.mobile.value
+      signup_url = signup_url + '?as=' + this.refs.mobile.value;
     }
-    window.open(signup_url, "_blank")
+    window.open(signup_url, '_blank');
   }
 
-
   resize() {
-    if (this.state.size === "small") {
+    if (this.state.size === 'small') {
       return;
     }
 
     if (window.innerWidth < 960) {
-      this.setState({ size: "large" });
+      this.setState({ size: 'large' });
     }
 
     if (window.innerWidth > 960) {
-      if (this.state.size === "large") {
-        this.setState({ size: "middle" });
+      if (this.state.size === 'large') {
+        this.setState({ size: 'middle' });
       }
-      if (this.state.size === "small") {
-        this.setState({ size: "small" });
+      if (this.state.size === 'small') {
+        this.setState({ size: 'small' });
       }
     }
   }
@@ -53,10 +51,10 @@ class EnterYourMobile extends React.Component {
 
   render() {
 
-    let layoutClass = "input-row"
+    let layoutClass = 'input-row';
 
-    if (this.state.size === "large") {
-      layoutClass = "input-column"
+    if (this.state.size === 'large') {
+      layoutClass = 'input-column';
     }
 
     return (
