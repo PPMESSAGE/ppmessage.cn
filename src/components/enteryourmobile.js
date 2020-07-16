@@ -14,7 +14,7 @@ class EnterYourMobile extends React.Component {
   }
 
   submitMobile() {
-    let signup_url = 'https://signup.ppmessage.cn';
+    let signup_url = 'https://sign.ppmessage.cn/signup';
     if (this.refs.mobile.value && this.refs.mobile.value.length) {
       signup_url = signup_url + '?as=' + this.refs.mobile.value;
     }
