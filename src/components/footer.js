@@ -39,7 +39,38 @@ class Footer extends React.Component {
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(hm, s);
     })();
-        
+    
+    // set bd_bid in cookie
+    (function() {
+      function getOCPCBid(_ref, _vid) {
+        if (_ref && _ref.length > 0) {
+            if (_ref.indexOf(_vid+"=") > 0) {
+                var _bid_index = _ref.indexOf(_vid + "=");
+                _bid_index += (_vid + "=").length;
+                var _bid = "";
+                while(_ref[_bid_index] && _ref[_bid_index] != "&") {
+                    _bid = _bid + _ref[_bid_index];
+                    _bid_index += 1;
+                }
+                return _bid;
+            }
+        }
+        return null;
+      }
+
+      function setCookie(key, value) {
+        var _expire = new Date();
+        _expire.setTime(_expire.getTime() + 24 * 3600 * 1000 * 365 * 30);
+        var _expire_str = _expire.toUTCString();
+        var _cookie = key + "=" + value + ";" + "domain=.ppmessage.cn;path=/;expires=" + _expire_str + ";";
+        document.cookie = _cookie;
+      }
+
+      if (getOCPCBid(document.location.href, "bd_vid")) {
+        setCookie("bd_vid", document.location.href);
+      }
+    })();
+
   }
 
   render() {
