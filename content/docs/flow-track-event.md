@@ -12,22 +12,22 @@ next: app-introduction.html
 
 值得注意的是访客信息中含有所有的定制事件，但是当前事件是以单独的变量形式体现:
 
-|名称 | 类型| 含义|
-|:---|:---:|---:|
-|`track_event_seq`|	integer|	表示当前触发流程的事件序号|
-|`track_event_uuid`|	string|	表示当前触发流程的事件uuid|
-|`track_event_count`|	integer|	表示当前触发流程的事件发生的次数|
-|`track_event_data`|	string|	表示当前触发流程的事件携带的数据|
+| 名称                | 类型    |                             含义 |
+|:--------------------|:-------:|---------------------------------:|
+| `track_event_seq`   | integer |       表示当前触发流程的事件序号 |
+| `track_event_uuid`  | string  |       表示当前触发流程的事件uuid |
+| `track_event_count` | integer | 表示当前触发流程的事件发生的次数 |
+| `track_event_data`  | string  | 表示当前触发流程的事件携带的数据 |
 
 
 访客携带所有的事件信息，依然可以通过变量访问，这些事件数据的变量形如:
 
-|名称 | 类型| 含义|
-|:---|:---:|---:|
-|`event_count_xxx`|integer|表示事件发生的次数|
-|`event_first_time_xxx`|datetime|表示事件首次发生的时间|
-|`event_last_time_xxx`|datetime|表示事件最后一次发生的时间|
-|`event_last_data_xxx`|string|表示事件最后一次发生时候携带的数据|
+| 名称                   | 类型     |                               含义 |
+|:-----------------------|:--------:|-----------------------------------:|
+| `event_count_xxx`      | integer  |                 表示事件发生的次数 |
+| `event_first_time_xxx` | datetime |             表示事件首次发生的时间 |
+| `event_last_time_xxx`  | datetime |         表示事件最后一次发生的时间 |
+| `event_last_data_xxx`  | string   | 表示事件最后一次发生时候携带的数据 |
 
 其中 xxx 表示事件序号。
 一个配置好的流程如下:

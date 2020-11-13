@@ -14,7 +14,7 @@ PPMESSAGE 是一个真正的消息平台，支持第三方应用集成。应用�
 
 通过应用集成，访客可以不离开消息界面就能完成企业应用交互。
 
-> 前提，应用开发者需要拥有自己的 Web 服务器。如果访问 PPMESSAGE 内数据请在团队设置界面中找到团队的 UUID （APP UUID）和 TOKEN。
+> 前提，应用开发者需要拥有自己的 Web 服务器。如果访问 PPMESSAGE 内数据请在团队设置界面中找到团队的 UUID （`APP_UUID`）和 TOKEN。
 
 ![](./app-develop-1.png)
 
